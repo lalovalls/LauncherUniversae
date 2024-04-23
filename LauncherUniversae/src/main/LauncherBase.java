@@ -4,10 +4,12 @@
  */
 package main;
 
+import java.awt.BorderLayout;
 import java.awt.Image;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 
 
 public class LauncherBase extends javax.swing.JFrame {
@@ -19,9 +21,9 @@ public class LauncherBase extends javax.swing.JFrame {
         this.repaint();   
     }
     
+    
     public LauncherBase() {
         initComponents();
-        this.setLocationRelativeTo(this);
         
         SetImageLabel(Fondo, "src/image1/FondoBase.png");
         SetImageLabel(Escudo8, "src/image1/LauncherButton8.png");
@@ -38,6 +40,20 @@ public class LauncherBase extends javax.swing.JFrame {
         SetImageLabel(Escudo10, "src/image1/LauncherButton10.png");
         SetImageLabel(Escudo11, "src/image1/LauncherButton11.png");
         SetImageLabel(Escudo12, "src/image1/LauncherButton12.png");
+        
+        HomeController hm = new HomeController();
+        ShowPanel(hm);
+    }
+        private void ShowPanel(JPanel p){
+        
+        p.setSize(1540, 870);
+        p.setLocation(0, 0);
+        
+        content.removeAll();
+        content.add(p, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+        
     }
 
     
@@ -61,6 +77,7 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11 = new javax.swing.JLabel();
         Escudo12 = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
+        content = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -111,6 +128,19 @@ public class LauncherBase extends javax.swing.JFrame {
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image1/FondoBase.png"))); // NOI18N
         bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
+
+        javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
+        content.setLayout(contentLayout);
+        contentLayout.setHorizontalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1540, Short.MAX_VALUE)
+        );
+        contentLayout.setVerticalGroup(
+            contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 870, Short.MAX_VALUE)
+        );
+
+        bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 1540, 870));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -178,5 +208,6 @@ public class LauncherBase extends javax.swing.JFrame {
     private javax.swing.JLabel Escudo9;
     private javax.swing.JLabel Fondo;
     private javax.swing.JPanel bg;
+    private javax.swing.JPanel content;
     // End of variables declaration//GEN-END:variables
 }
