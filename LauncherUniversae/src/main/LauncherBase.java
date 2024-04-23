@@ -24,25 +24,25 @@ public class LauncherBase extends javax.swing.JFrame {
     
     public LauncherBase() {
         initComponents();
-        
-        SetImageLabel(Fondo, "src/image1/FondoBase.png");
-        SetImageLabel(Escudo8, "src/image1/LauncherButton8.png");
-        SetImageLabel(Escudo0, "src/image1/LauncherButton0.png");
-        SetImageLabel(Escudo1, "src/image1/LauncherButton1.png");
-        SetImageLabel(Escudo2, "src/image1/LauncherButton2.png");
-        SetImageLabel(Escudo3, "src/image1/LauncherButton3.png");
-        SetImageLabel(Escudo4, "src/image1/LauncherButton4.png");
-        SetImageLabel(Escudo5, "src/image1/LauncherButton5.png");
-        SetImageLabel(Escudo6, "src/image1/LauncherButton6.png");
-        SetImageLabel(Escudo7, "src/image1/LauncherButton7.png");
-        SetImageLabel(Escudo13, "src/image1/LauncherButton13.png");
-        SetImageLabel(Escudo9, "src/image1/LauncherButton9.png");
-        SetImageLabel(Escudo10, "src/image1/LauncherButton10.png");
-        SetImageLabel(Escudo11, "src/image1/LauncherButton11.png");
-        SetImageLabel(Escudo12, "src/image1/LauncherButton12.png");
-        
         HomeController hm = new HomeController();
         ShowPanel(hm);
+        
+        SetImageLabel(Fondo, "src/imagenes/FondoBase.png");
+        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+        SetImageLabel(Escudo0, "src/imagenes/LauncherButton0.png");
+        SetImageLabel(Escudo1, "src/imagenes/LauncherButton1.png");
+        SetImageLabel(Escudo2, "src/imagenes/LauncherButton2.png");
+        SetImageLabel(Escudo3, "src/imagenes/LauncherButton3.png");
+        SetImageLabel(Escudo4, "src/imagenes/LauncherButton4.png");
+        SetImageLabel(Escudo5, "src/imagenes/LauncherButton5.png");
+        SetImageLabel(Escudo6, "src/imagenes/LauncherButton6.png");
+        SetImageLabel(Escudo7, "src/imagenes/LauncherButton7.png");
+        SetImageLabel(Escudo13, "src/imagenes/LauncherButton13.png");
+        SetImageLabel(Escudo9, "src/imagenes/LauncherButton9.png");
+        SetImageLabel(Escudo10, "src/imagenes/LauncherButton10.png");
+        SetImageLabel(Escudo11, "src/imagenes/LauncherButton11.png");
+        SetImageLabel(Escudo12, "src/imagenes/LauncherButton12.png");
+        
     }
         private void ShowPanel(JPanel p){
         
