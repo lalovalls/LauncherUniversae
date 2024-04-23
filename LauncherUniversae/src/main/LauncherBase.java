@@ -21,6 +21,7 @@ public class LauncherBase extends javax.swing.JFrame {
     
     public LauncherBase() {
         initComponents();
+        
         this.setLocationRelativeTo(this);
         
         SetImageLabel(Fondo, "src/image1/FondoBase.png");
@@ -39,6 +40,8 @@ public class LauncherBase extends javax.swing.JFrame {
         SetImageLabel(Escudo11, "src/image1/LauncherButton11.png");
         SetImageLabel(Escudo12, "src/image1/LauncherButton12.png");
     }
+    
+    
 
     
     @SuppressWarnings("unchecked")
@@ -63,50 +66,65 @@ public class LauncherBase extends javax.swing.JFrame {
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setLocationByPlatform(true);
+        setUndecorated(true);
+        setResizable(false);
 
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Escudo8.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, 103, 111));
 
         Escudo0.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo0, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 80, 103, 111));
 
         Escudo1.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, 103, 111));
 
         Escudo2.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 80, 103, 111));
 
         Escudo3.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 80, 103, 111));
 
         Escudo4.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 80, 103, 111));
 
         Escudo5.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo5, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 80, 103, 111));
 
         Escudo6.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo6, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 80, 103, 111));
 
         Escudo7.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 80, 103, 111));
 
         Escudo13.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo13.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo13, new org.netbeans.lib.awtextra.AbsoluteConstraints(1370, 80, 103, 111));
 
         Escudo9.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo9, new org.netbeans.lib.awtextra.AbsoluteConstraints(1480, 80, 103, 111));
 
         Escudo10.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo10.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo10, new org.netbeans.lib.awtextra.AbsoluteConstraints(1590, 80, 103, 111));
 
         Escudo11.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo11.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo11, new org.netbeans.lib.awtextra.AbsoluteConstraints(1700, 80, 103, 111));
 
         Escudo12.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo12.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         bg.add(Escudo12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1810, 80, 103, 111));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image1/FondoBase.png"))); // NOI18N
