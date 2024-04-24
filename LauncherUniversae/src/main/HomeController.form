@@ -62,7 +62,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/HomeButton0.png"/>
+              <Image iconType="3" name="/imagenes/HomeButton1.png"/>
             </Property>
           </Properties>
         </Component>
@@ -70,7 +70,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/HomeButton0.png"/>
+              <Image iconType="3" name="/imagenes/HomeButton2.png"/>
             </Property>
           </Properties>
         </Component>
@@ -78,7 +78,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/HomeButton0.png"/>
+              <Image iconType="3" name="/imagenes/HomeButton3.png"/>
             </Property>
           </Properties>
         </Component>
@@ -86,7 +86,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/HomeButton0.png"/>
+              <Image iconType="3" name="/imagenes/HomeButton4.png"/>
             </Property>
           </Properties>
         </Component>
@@ -94,7 +94,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/HomeButton0.png"/>
+              <Image iconType="3" name="/imagenes/HomeButton5.png"/>
             </Property>
           </Properties>
         </Component>
