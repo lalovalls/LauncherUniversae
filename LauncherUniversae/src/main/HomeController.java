@@ -242,7 +242,7 @@ public class HomeController extends javax.swing.JPanel {
     if (icon != null && icon instanceof ImageIcon) { 
         ImageIcon imageIcon = (ImageIcon) icon;
         Image image = imageIcon.getImage();
-        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_DEFAULT);
+        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         labelName.setIcon(scaledIcon);
         this.repaint();
