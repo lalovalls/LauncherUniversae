@@ -49,7 +49,8 @@ public class HomeController extends javax.swing.JPanel {
         setMinimumSize(new java.awt.Dimension(1540, 870));
 
         bg.setBackground(new java.awt.Color(10, 38, 72));
-        bg.setLayout(new java.awt.GridLayout(2, 3, 60, 60));
+        bg.setBorder(javax.swing.BorderFactory.createEmptyBorder(100, 100, 100, 100));
+        bg.setLayout(new java.awt.GridLayout(2, 3, 100, 100));
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton0.png"))); // NOI18N

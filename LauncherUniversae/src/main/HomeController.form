@@ -36,13 +36,18 @@
         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="48" green="26" red="a" type="rgb"/>
         </Property>
+        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+          <Border info="org.netbeans.modules.form.compat2.border.EmptyBorderInfo">
+            <EmptyBorder bottom="100" left="100" right="100" top="100"/>
+          </Border>
+        </Property>
       </Properties>
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
         <Property name="columns" type="int" value="3"/>
-        <Property name="horizontalGap" type="int" value="60"/>
+        <Property name="horizontalGap" type="int" value="100"/>
         <Property name="rows" type="int" value="2"/>
-        <Property name="verticalGap" type="int" value="60"/>
+        <Property name="verticalGap" type="int" value="100"/>
       </Layout>
       <SubComponents>
         <Component class="javax.swing.JLabel" name="jLabel1">
