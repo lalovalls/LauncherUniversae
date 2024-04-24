@@ -16,7 +16,7 @@ public class LauncherBase extends javax.swing.JFrame {
 
     private void SetImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);
-        Icon icon = new ImageIcon (  image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_DEFAULT));
+        Icon icon = new ImageIcon (  image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
         labelName.setIcon(icon);
         this.repaint();   
     }
@@ -74,6 +74,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo8.setName(""); // NOI18N
         Escudo8.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo8MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo8MouseEntered(evt);
             }
@@ -292,9 +295,6 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo11.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Escudo11MouseClicked(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo11MouseEntered(evt);
             }
@@ -492,7 +492,7 @@ public class LauncherBase extends javax.swing.JFrame {
         SetImageLabel(Escudo12, "src/imagenes/LauncherButton12.png");
     }//GEN-LAST:event_Escudo12MouseExited
 
-    private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
+    private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
         HomeController hm = new HomeController();
         hm.setSize(1540, 870);
         hm.setLocation(0, 0);
@@ -501,7 +501,7 @@ public class LauncherBase extends javax.swing.JFrame {
         content.add(hm, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
-    }//GEN-LAST:event_Escudo11MouseClicked
+    }//GEN-LAST:event_Escudo8MouseClicked
 
     /**
      * @param args the command line arguments
