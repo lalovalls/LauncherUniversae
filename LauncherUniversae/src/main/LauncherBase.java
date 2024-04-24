@@ -24,23 +24,17 @@ public class LauncherBase extends javax.swing.JFrame {
     
     public LauncherBase() {
         initComponents();
+        
         HomeController hm = new HomeController();
-        ShowPanel(hm);
-        
-     
-        
-    }
-        private void ShowPanel(JPanel p){
-        
-        p.setSize(1540, 870);
-        p.setLocation(0, 0);
+        hm.setSize(1540, 870);
+        hm.setLocation(0, 0);
         
         content.removeAll();
-        content.add(p, BorderLayout.CENTER);
+        content.add(hm, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
-        
     }
+      
 
     
     @SuppressWarnings("unchecked")
@@ -298,6 +292,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo11.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo11MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo11MouseEntered(evt);
             }
@@ -494,6 +491,17 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo12.setSize(103, 111);
         SetImageLabel(Escudo12, "src/imagenes/LauncherButton12.png");
     }//GEN-LAST:event_Escudo12MouseExited
+
+    private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
+        HomeController hm = new HomeController();
+        hm.setSize(1540, 870);
+        hm.setLocation(0, 0);
+        
+        content.removeAll();
+        content.add(hm, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+    }//GEN-LAST:event_Escudo11MouseClicked
 
     /**
      * @param args the command line arguments
