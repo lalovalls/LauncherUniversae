@@ -20,17 +20,7 @@ public class HomeController extends javax.swing.JPanel {
     
     public HomeController() {
         initComponents();
-          addComponentListener(new ComponentAdapter() {
-        @Override
-        public void componentResized(ComponentEvent e) {
-            setImageLabel(Button0);
-            setImageLabel(Button1);
-            setImageLabel(Button2);
-            setImageLabel(Button3);
-            setImageLabel(Button4);
-            setImageLabel(Button5);
-        }
-    });
+
     }
     
 
@@ -47,11 +37,10 @@ public class HomeController extends javax.swing.JPanel {
         Button5 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bg.setBackground(new java.awt.Color(10, 38, 72));
         bg.setBorder(javax.swing.BorderFactory.createEmptyBorder(100, 100, 100, 100));
-        bg.setLayout(null);
+        bg.setLayout(new java.awt.GridLayout(2, 3, 42, 42));
 
         Button0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton0.png"))); // NOI18N
@@ -67,7 +56,6 @@ public class HomeController extends javax.swing.JPanel {
             }
         });
         bg.add(Button0);
-        Button0.setBounds(100, 100, 393, 295);
 
         Button1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton1.png"))); // NOI18N
@@ -83,7 +71,6 @@ public class HomeController extends javax.swing.JPanel {
             }
         });
         bg.add(Button1);
-        Button1.setBounds(573, 100, 393, 295);
 
         Button2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton2.png"))); // NOI18N
@@ -99,7 +86,6 @@ public class HomeController extends javax.swing.JPanel {
             }
         });
         bg.add(Button2);
-        Button2.setBounds(1046, 100, 393, 295);
 
         Button3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton3.png"))); // NOI18N
@@ -115,7 +101,6 @@ public class HomeController extends javax.swing.JPanel {
             }
         });
         bg.add(Button3);
-        Button3.setBounds(100, 475, 393, 295);
 
         Button4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton4.png"))); // NOI18N
@@ -131,7 +116,6 @@ public class HomeController extends javax.swing.JPanel {
             }
         });
         bg.add(Button4);
-        Button4.setBounds(573, 475, 393, 295);
 
         Button5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton5.png"))); // NOI18N
@@ -147,58 +131,46 @@ public class HomeController extends javax.swing.JPanel {
             }
         });
         bg.add(Button5);
-        Button5.setBounds(1046, 475, 393, 295);
 
-        add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 870));
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 1540, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
+    private void Button5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseExited
+        Button5.setSize(391, 281);
+        setImageLabel(Button5);
+    }//GEN-LAST:event_Button5MouseExited
+
+    private void Button5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseEntered
+        Button5.setSize(420, 320);
+        setImageLabel(Button5);
+    }//GEN-LAST:event_Button5MouseEntered
+
+    private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button0MouseClicked
+    }//GEN-LAST:event_Button5MouseClicked
 
-    private void Button0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseEntered
-        Button0.setSize(420, 320);
-        setImageLabel(Button0);
-        
-    }//GEN-LAST:event_Button0MouseEntered
+    private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
+        Button4.setSize(391, 281);
+        setImageLabel(Button4);
+    }//GEN-LAST:event_Button4MouseExited
 
-    private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
-        Button0.setSize(391, 281);
-        setImageLabel(Button0);
-    
-    }//GEN-LAST:event_Button0MouseExited
+    private void Button4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseEntered
+        Button4.setSize(420, 320);
+        setImageLabel(Button4);
+    }//GEN-LAST:event_Button4MouseEntered
 
-    private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
+    private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button1MouseClicked
-
-    private void Button1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseEntered
-        Button1.setSize(420, 320);
-        setImageLabel(Button1);
-    }//GEN-LAST:event_Button1MouseEntered
-
-    private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
-        Button1.setSize(391, 281);
-        setImageLabel(Button1);
-    }//GEN-LAST:event_Button1MouseExited
-
-    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button2MouseClicked
-
-    private void Button2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseEntered
-        Button2.setSize(420, 320);
-        setImageLabel(Button2);
-    }//GEN-LAST:event_Button2MouseEntered
-
-    private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
-        Button2.setSize(391, 281);
-        setImageLabel(Button2);
-    }//GEN-LAST:event_Button2MouseExited
-
-    private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Button3MouseClicked
+    }//GEN-LAST:event_Button4MouseClicked
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
         Button3.setSize(391, 281);
@@ -206,43 +178,63 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button3MouseExited
 
     private void Button3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseEntered
-         Button3.setSize(420, 320);
-         setImageLabel(Button3);
+        Button3.setSize(420, 320);
+        setImageLabel(Button3);
     }//GEN-LAST:event_Button3MouseEntered
 
-    private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
+    private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button4MouseClicked
+    }//GEN-LAST:event_Button3MouseClicked
 
-    private void Button4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseEntered
-         Button4.setSize(420, 320);
-         setImageLabel(Button4);
-    }//GEN-LAST:event_Button4MouseEntered
+    private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
+        Button2.setSize(391, 281);
+        setImageLabel(Button2);
+    }//GEN-LAST:event_Button2MouseExited
 
-    private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
-        Button4.setSize(391, 281);
-        setImageLabel(Button4);
-    }//GEN-LAST:event_Button4MouseExited
+    private void Button2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseEntered
+        Button2.setSize(420, 320);
+        setImageLabel(Button2);
+    }//GEN-LAST:event_Button2MouseEntered
 
-    private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
+    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_Button5MouseClicked
+    }//GEN-LAST:event_Button2MouseClicked
 
-    private void Button5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseEntered
-         Button5.setSize(420, 320);
-         setImageLabel(Button5);
-    }//GEN-LAST:event_Button5MouseEntered
+    private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
+        Button1.setSize(391, 281);
+        setImageLabel(Button1);
+    }//GEN-LAST:event_Button1MouseExited
 
-    private void Button5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseExited
-        Button5.setSize(391, 281);
-        setImageLabel(Button5);
-    }//GEN-LAST:event_Button5MouseExited
+    private void Button1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseEntered
+        Button1.setSize(420, 320);
+        setImageLabel(Button1);
+    }//GEN-LAST:event_Button1MouseEntered
+
+    private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button1MouseClicked
+
+    private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
+        Button0.setSize(391, 281);
+        setImageLabel(Button0);
+
+    }//GEN-LAST:event_Button0MouseExited
+
+    private void Button0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseEntered
+        Button0.setSize(420, 320);
+        setImageLabel(Button0);
+
+    }//GEN-LAST:event_Button0MouseEntered
+
+    private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName) {
     Icon icon = labelName.getIcon(); 
     if (icon != null && icon instanceof ImageIcon) { 
         ImageIcon imageIcon = (ImageIcon) icon;
         Image image = imageIcon.getImage();
-        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_DEFAULT);
+        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         labelName.setIcon(scaledIcon);
         this.repaint();
