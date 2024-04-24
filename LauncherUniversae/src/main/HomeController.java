@@ -23,12 +23,12 @@ public class HomeController extends javax.swing.JPanel {
           addComponentListener(new ComponentAdapter() {
         @Override
         public void componentResized(ComponentEvent e) {
-            setImageLabel(jLabel1);
-            setImageLabel(jLabel2);
-            setImageLabel(jLabel3);
-            setImageLabel(jLabel4);
-            setImageLabel(jLabel5);
-            setImageLabel(jLabel6);
+            setImageLabel(Button0);
+            setImageLabel(Button1);
+            setImageLabel(Button2);
+            setImageLabel(Button3);
+            setImageLabel(Button4);
+            setImageLabel(Button5);
         }
     });
     }
@@ -39,54 +39,186 @@ public class HomeController extends javax.swing.JPanel {
     private void initComponents() {
 
         bg = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
+        Button0 = new javax.swing.JLabel();
+        Button1 = new javax.swing.JLabel();
+        Button2 = new javax.swing.JLabel();
+        Button3 = new javax.swing.JLabel();
+        Button4 = new javax.swing.JLabel();
+        Button5 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bg.setBackground(new java.awt.Color(10, 38, 72));
         bg.setBorder(javax.swing.BorderFactory.createEmptyBorder(100, 100, 100, 100));
-        bg.setLayout(new java.awt.GridLayout(2, 3, 100, 100));
+        bg.setLayout(new java.awt.GridLayout(2, 3, 80, 80));
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton0.png"))); // NOI18N
-        bg.add(jLabel1);
+        Button0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Button0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton0.png"))); // NOI18N
+        Button0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button0MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button0MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button0MouseExited(evt);
+            }
+        });
+        bg.add(Button0);
 
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton1.png"))); // NOI18N
-        bg.add(jLabel2);
+        Button1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Button1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton1.png"))); // NOI18N
+        Button1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button1MouseExited(evt);
+            }
+        });
+        bg.add(Button1);
 
-        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton2.png"))); // NOI18N
-        bg.add(jLabel3);
+        Button2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton2.png"))); // NOI18N
+        Button2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button2MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button2MouseExited(evt);
+            }
+        });
+        bg.add(Button2);
 
-        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton3.png"))); // NOI18N
-        bg.add(jLabel4);
+        Button3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Button3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton3.png"))); // NOI18N
+        Button3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button3MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button3MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button3MouseExited(evt);
+            }
+        });
+        bg.add(Button3);
 
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton4.png"))); // NOI18N
-        bg.add(jLabel5);
+        Button4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Button4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton4.png"))); // NOI18N
+        Button4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button4MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button4MouseExited(evt);
+            }
+        });
+        bg.add(Button4);
 
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton5.png"))); // NOI18N
-        bg.add(jLabel6);
+        Button5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Button5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton5.png"))); // NOI18N
+        Button5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Button5MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Button5MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Button5MouseExited(evt);
+            }
+        });
+        bg.add(Button5);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1540, 870));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button0MouseClicked
+
+    private void Button0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseEntered
+        Button0.setSize(450, 400);
+        
+    }//GEN-LAST:event_Button0MouseEntered
+
+    private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
+        Button0.setSize(400, 300);
+    
+    }//GEN-LAST:event_Button0MouseExited
+
+    private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button1MouseClicked
+
+    private void Button1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseEntered
+        Button1.setSize(450, 400);
+    }//GEN-LAST:event_Button1MouseEntered
+
+    private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
+        Button1.setSize(400, 300);
+    }//GEN-LAST:event_Button1MouseExited
+
+    private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button2MouseClicked
+
+    private void Button2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseEntered
+        Button2.setSize(450, 400);
+    }//GEN-LAST:event_Button2MouseEntered
+
+    private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
+        Button2.setSize(400, 300);
+    }//GEN-LAST:event_Button2MouseExited
+
+    private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button3MouseClicked
+
+    private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
+         Button3.setSize(400, 300);
+    }//GEN-LAST:event_Button3MouseExited
+
+    private void Button3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseEntered
+         Button3.setSize(450, 400);
+    }//GEN-LAST:event_Button3MouseEntered
+
+    private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button4MouseClicked
+
+    private void Button4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseEntered
+         Button4.setSize(450, 400);
+    }//GEN-LAST:event_Button4MouseEntered
+
+    private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
+         Button4.setSize(400, 300);
+    }//GEN-LAST:event_Button4MouseExited
+
+    private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Button5MouseClicked
+
+    private void Button5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseEntered
+         Button5.setSize(450, 400);
+    }//GEN-LAST:event_Button5MouseEntered
+
+    private void Button5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseExited
+         Button5.setSize(400, 300);
+    }//GEN-LAST:event_Button5MouseExited
   private void setImageLabel(JLabel labelName) {
     Icon icon = labelName.getIcon(); 
     if (icon != null && icon instanceof ImageIcon) { 
@@ -100,13 +232,13 @@ public class HomeController extends javax.swing.JPanel {
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Button0;
+    private javax.swing.JLabel Button1;
+    private javax.swing.JLabel Button2;
+    private javax.swing.JLabel Button3;
+    private javax.swing.JLabel Button4;
+    private javax.swing.JLabel Button5;
     private javax.swing.JPanel bg;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     // End of variables declaration//GEN-END:variables
 }
 
