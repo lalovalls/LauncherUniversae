@@ -40,6 +40,7 @@ public class HomeController extends javax.swing.JPanel {
 
         bg.setBackground(new java.awt.Color(10, 38, 72));
         bg.setBorder(javax.swing.BorderFactory.createEmptyBorder(100, 100, 100, 100));
+        bg.setPreferredSize(new java.awt.Dimension(1540, 870));
         bg.setLayout(new java.awt.GridLayout(2, 3, 42, 42));
 
         Button0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -136,11 +137,11 @@ public class HomeController extends javax.swing.JPanel {
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 1540, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, 870, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
