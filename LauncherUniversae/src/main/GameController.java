@@ -27,21 +27,127 @@ public class GameController extends javax.swing.JPanel {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
+        Comenzar = new javax.swing.JLabel();
+        ImagenFondo = new javax.swing.JLabel();
+        FlechaDerecha = new javax.swing.JLabel();
+        FlechaIzquierda = new javax.swing.JLabel();
+        Punto1 = new javax.swing.JLabel();
+        Punto2 = new javax.swing.JLabel();
+        Punto3 = new javax.swing.JLabel();
+        Punto4 = new javax.swing.JLabel();
+        Punto5 = new javax.swing.JLabel();
+        TituloDeTexto = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
 
         jPanel1.setBackground(new java.awt.Color(10, 38, 72));
 
+        Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
+
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
+
+        FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha derecha.png"))); // NOI18N
+
+        FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha izquierda.png"))); // NOI18N
+
+        Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
+
+        Punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+
+        Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+
+        Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+
+        Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+
+        TituloDeTexto.setFont(new java.awt.Font("Raleway Black", 1, 16)); // NOI18N
+        TituloDeTexto.setForeground(new java.awt.Color(255, 255, 255));
+        TituloDeTexto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        TituloDeTexto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Barrita aislada descripción.png"))); // NOI18N
+        TituloDeTexto.setText("Embarque y desembarque en helicóptero");
+
+        jLabel1.setFont(new java.awt.Font("Raleway", 0, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel1.setText("•\tDescripción:  En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incendios forestales. ");
+
+        jLabel2.setFont(new java.awt.Font("Raleway", 0, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        jLabel2.setText("•\tGrado, asignatura y unidad:\n\tCoordinación de emergencias y protección civil.\n\tGestión de recursos de emergencias y protección civil\n\tPlanificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones.\n");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1540, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Comenzar, javax.swing.GroupLayout.PREFERRED_SIZE, 254, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(42, 42, 42))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(349, 349, 349)
+                        .addComponent(FlechaIzquierda, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ImagenFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 783, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(FlechaDerecha, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(37, 37, 37)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(TituloDeTexto)
+                                .addGap(328, 328, 328)
+                                .addComponent(Punto1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Punto2)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Punto3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Punto4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(Punto5))
+                            .addComponent(jLabel1)
+                            .addComponent(jLabel2))))
+                .addContainerGap(346, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 870, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(67, 67, 67)
+                        .addComponent(ImagenFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(242, 242, 242)
+                        .addComponent(FlechaDerecha))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(244, 244, 244)
+                        .addComponent(FlechaIzquierda)))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Punto1, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Punto2, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Punto3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Punto4, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(Punto5, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TituloDeTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(186, 186, 186)
+                .addComponent(Comenzar)
+                .addGap(34, 34, 34))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
@@ -58,6 +164,18 @@ public class GameController extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Comenzar;
+    private javax.swing.JLabel FlechaDerecha;
+    private javax.swing.JLabel FlechaIzquierda;
+    private javax.swing.JLabel ImagenFondo;
+    private javax.swing.JLabel Punto1;
+    private javax.swing.JLabel Punto2;
+    private javax.swing.JLabel Punto3;
+    private javax.swing.JLabel Punto4;
+    private javax.swing.JLabel Punto5;
+    private javax.swing.JLabel TituloDeTexto;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
