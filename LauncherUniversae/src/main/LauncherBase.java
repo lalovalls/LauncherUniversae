@@ -26,13 +26,18 @@ public class LauncherBase extends javax.swing.JFrame {
         initComponents();
         
         HomeController hm = new HomeController();
-        hm.setSize(1540, 870);
-        hm.setLocation(0, 0);
+        ShowPanel(hm);
+        
+    }
+   private void ShowPanel(JPanel p){
+        
+        p.setSize(1540, 870);
+        p.setLocation(10, 0);
         
         content.removeAll();
-        content.add(hm, BorderLayout.CENTER);
+        content.add(p, BorderLayout.CENTER);
         content.revalidate();
-        content.repaint();
+        content.repaint(); 
     }
       
 
@@ -295,6 +300,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo11.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo11MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo11MouseEntered(evt);
             }
@@ -493,44 +501,19 @@ public class LauncherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_Escudo12MouseExited
 
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
-        HomeController hm = new HomeController();
-        hm.setSize(1540, 870);
-        hm.setLocation(0, 0);
-        
-        content.removeAll();
-        content.add(hm, BorderLayout.CENTER);
-        content.revalidate();
-        content.repaint();
+       HomeController hm = new HomeController();
+        ShowPanel(hm);
     }//GEN-LAST:event_Escudo8MouseClicked
+
+    private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
+        
+    }//GEN-LAST:event_Escudo11MouseClicked
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(LauncherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(LauncherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(LauncherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(LauncherBase.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
+     
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new LauncherBase().setVisible(true);

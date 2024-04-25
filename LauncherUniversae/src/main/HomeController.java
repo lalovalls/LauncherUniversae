@@ -230,15 +230,14 @@ public class HomeController extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName) {
-    Icon icon = labelName.getIcon(); 
-    if (icon != null && icon instanceof ImageIcon) { 
+        Icon icon = labelName.getIcon(); 
         ImageIcon imageIcon = (ImageIcon) icon;
         Image image = imageIcon.getImage();
-        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
+        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_DEFAULT);
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         labelName.setIcon(scaledIcon);
         this.repaint();
-    }
+    
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
