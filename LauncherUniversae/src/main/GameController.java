@@ -48,12 +48,15 @@ public class GameController extends javax.swing.JPanel {
         jPanel1.setBackground(new java.awt.Color(10, 38, 72));
 
         Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
+        Comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
 
         FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha derecha.png"))); // NOI18N
+        FlechaDerecha.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha izquierda.png"))); // NOI18N
+        FlechaIzquierda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
 
@@ -127,7 +130,7 @@ public class GameController extends javax.swing.JPanel {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(Comenzar)
-                .addGap(54, 54, 54))
+                .addGap(55, 55, 55))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -158,9 +161,9 @@ public class GameController extends javax.swing.JPanel {
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(60, 60, 60)
                 .addComponent(Comenzar)
-                .addGap(133, 133, 133))
+                .addGap(101, 101, 101))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
