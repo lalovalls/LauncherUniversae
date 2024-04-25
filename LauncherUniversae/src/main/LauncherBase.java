@@ -5,7 +5,10 @@
 package main;
 
 import java.awt.BorderLayout;
+import java.awt.Cursor;
 import java.awt.Image;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -13,27 +16,48 @@ import javax.swing.JPanel;
 
 
 public class LauncherBase extends javax.swing.JFrame {
+    
+    public HomeController CreateHomeController(int index){
+        
+        HomeController home = new HomeController();
+        home.setSize(1540, 870);
+        home.setLocation(0,0);
+        home.parent = this;
+        home.indiceGradoActual = index;
+        return home;
+    }
+    public void PaintHomeController(HomeController home) {
+        
+        setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        content.removeAll();
+        content.add(home, BorderLayout.CENTER);
+        content.revalidate();
+        content.repaint();
+        
+    }
+    
 
     private void SetImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);
-        Icon icon = new ImageIcon (  image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
+        Icon icon = new ImageIcon ( image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
         labelName.setIcon(icon);
-        this.repaint();   
+        labelName.repaint();
     }
     
     
     public LauncherBase() {
         initComponents();
+        this.setLocationRelativeTo(this);
         
-        HomeController hm = new HomeController();
-        ShowPanel(hm);
+        HomeController home = CreateHomeController(0);
+        PaintHomeController(home);
 
         
     }
    private void ShowPanel(JPanel p){
         
         p.setSize(1540, 870);
-        p.setLocation(10, 0);
+        p.setLocation(0, 0);
         
         content.removeAll();
         content.add(p, BorderLayout.CENTER);
@@ -62,8 +86,8 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo10 = new javax.swing.JLabel();
         Escudo11 = new javax.swing.JLabel();
         Escudo12 = new javax.swing.JLabel();
-        Fondo = new javax.swing.JLabel();
         content = new javax.swing.JPanel();
+        Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -103,6 +127,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo0.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo0.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo0.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo0MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo0MouseEntered(evt);
             }
@@ -301,9 +328,6 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo11.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Escudo11MouseClicked(evt);
-            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo11MouseEntered(evt);
             }
@@ -331,8 +355,9 @@ public class LauncherBase extends javax.swing.JFrame {
         });
         bg.add(Escudo12, new org.netbeans.lib.awtextra.AbsoluteConstraints(1810, 80, -1, -1));
 
-        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoBase.png"))); // NOI18N
-        bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
+        content.setMaximumSize(new java.awt.Dimension(1540, 870));
+        content.setMinimumSize(new java.awt.Dimension(1540, 870));
+        content.setOpaque(false);
 
         javax.swing.GroupLayout contentLayout = new javax.swing.GroupLayout(content);
         content.setLayout(contentLayout);
@@ -347,6 +372,9 @@ public class LauncherBase extends javax.swing.JFrame {
 
         bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 1540, 870));
 
+        Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoBase.png"))); // NOI18N
+        bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -360,16 +388,6 @@ public class LauncherBase extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void Escudo8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseEntered
-        Escudo8.setSize(113, 121);
-        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-    }//GEN-LAST:event_Escudo8MouseEntered
-
-    private void Escudo8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseExited
-        Escudo8.setSize(103, 111);
-        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-    }//GEN-LAST:event_Escudo8MouseExited
 
     private void Escudo0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseEntered
          Escudo0.setSize(113, 121);
@@ -502,13 +520,24 @@ public class LauncherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_Escudo12MouseExited
 
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
-       HomeController hm = new HomeController();
-        ShowPanel(hm);
+       HomeController home = CreateHomeController(9);
+       PaintHomeController(home);
     }//GEN-LAST:event_Escudo8MouseClicked
 
-    private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
-        
-    }//GEN-LAST:event_Escudo11MouseClicked
+    private void Escudo0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseClicked
+        HomeController home = CreateHomeController(1);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo0MouseClicked
+
+    private void Escudo8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseEntered
+        Escudo8.setSize(113, 121);
+        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+    }//GEN-LAST:event_Escudo8MouseEntered
+
+    private void Escudo8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseExited
+        Escudo8.setSize(103, 111);
+        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+    }//GEN-LAST:event_Escudo8MouseExited
 
     /**
      * @param args the command line arguments

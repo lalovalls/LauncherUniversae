@@ -149,7 +149,7 @@ public class HomeController extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void Button5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseExited
-        Button5.setSize(391, 281);
+        Button5.setSize(381, 291);
         setImageLabel(Button5);
     }//GEN-LAST:event_Button5MouseExited
 
@@ -163,7 +163,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button5MouseClicked
 
     private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
-        Button4.setSize(391, 281);
+        Button4.setSize(381, 291);
         setImageLabel(Button4);
     }//GEN-LAST:event_Button4MouseExited
 
@@ -177,7 +177,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button4MouseClicked
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
-        Button3.setSize(391, 281);
+        Button3.setSize(381, 291);
         setImageLabel(Button3);
     }//GEN-LAST:event_Button3MouseExited
 
@@ -191,7 +191,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button3MouseClicked
 
     private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
-        Button2.setSize(391, 281);
+        Button2.setSize(381, 291);
         setImageLabel(Button2);
     }//GEN-LAST:event_Button2MouseExited
 
@@ -205,7 +205,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button2MouseClicked
 
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
-        Button1.setSize(391, 281);
+        Button1.setSize(381, 291);
         setImageLabel(Button1);
     }//GEN-LAST:event_Button1MouseExited
 
@@ -219,7 +219,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button1MouseClicked
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
-        Button0.setSize(391, 281);
+        Button0.setSize(381, 291);
         setImageLabel(Button0);
 
     }//GEN-LAST:event_Button0MouseExited
@@ -237,7 +237,7 @@ public class HomeController extends javax.swing.JPanel {
         Icon icon = labelName.getIcon(); 
         ImageIcon imageIcon = (ImageIcon) icon;
         Image image = imageIcon.getImage();
-        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_DEFAULT);
+        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         labelName.setIcon(scaledIcon);
         this.repaint();
@@ -254,8 +254,6 @@ public class HomeController extends javax.swing.JPanel {
     private javax.swing.JPanel bg;
     // End of variables declaration//GEN-END:variables
 
-    private void ShowPanel(GameController gm) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+  
 }
 
