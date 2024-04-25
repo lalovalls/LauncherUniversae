@@ -16,6 +16,9 @@ import javax.swing.JLabel;
  * @author L4rry
  */
 public class HomeController extends javax.swing.JPanel {
+    
+    public LauncherBase parent;
+    public int indiceGradoActual = 0;
 
     
     public HomeController() {
