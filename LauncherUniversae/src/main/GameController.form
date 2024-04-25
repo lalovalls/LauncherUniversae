@@ -44,11 +44,6 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace max="32767" attributes="0"/>
-                  <Component id="Comenzar" min="-2" pref="254" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="42" max="-2" attributes="0"/>
-              </Group>
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -77,10 +72,17 @@
                               </Group>
                               <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
+                              <Component id="jLabel4" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
                   <EmptySpace pref="346" max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="Comenzar" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -101,30 +103,26 @@
                           <Component id="FlechaIzquierda" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace max="-2" attributes="0"/>
-                          <Group type="103" groupAlignment="0" attributes="0">
-                              <Component id="Punto1" min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="Punto2" min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="Punto3" min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="Punto4" min="-2" pref="34" max="-2" attributes="0"/>
-                              <Component id="Punto5" min="-2" pref="34" max="-2" attributes="0"/>
-                          </Group>
-                          <EmptySpace max="32767" attributes="0"/>
-                      </Group>
-                      <Group type="102" alignment="1" attributes="0">
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="TituloDeTexto" min="-2" pref="50" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="Punto1" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="Punto2" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="Punto3" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="Punto4" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="Punto5" min="-2" pref="34" max="-2" attributes="0"/>
+                      <Component id="TituloDeTexto" alignment="0" min="-2" pref="50" max="-2" attributes="0"/>
                   </Group>
+                  <EmptySpace max="32767" attributes="0"/>
                   <Component id="jLabel1" min="-2" pref="29" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="jLabel2" min="-2" pref="29" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="186" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel3" min="-2" pref="29" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel4" min="-2" pref="29" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                   <Component id="Comenzar" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="133" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -229,7 +227,31 @@
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
             </Property>
             <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="text" type="java.lang.String" value="&#x2022;&#x9;Grado, asignatura y unidad:&#xa;&#x9;Coordinaci&#xf3;n de emergencias y protecci&#xf3;n civil.&#xa;&#x9;Gesti&#xf3;n de recursos de emergencias y protecci&#xf3;n civil&#xa;&#x9;Planificaci&#xf3;n y supervisi&#xf3;n del mantenimiento de equipos, medios t&#xe9;cnicos e instalaciones.&#xa;"/>
+            <Property name="text" type="java.lang.String" value="&#x2022;&#x9;Grado, asignatura y unidad:&#xa;&#x9;     Coordinaci&#xf3;n de emergencias y protecci&#xf3;n civil.&#xa;&#x9; Gesti&#xf3;n de recursos de emergencias y protecci&#xf3;n civil.&#xa;&#x9; Planificaci&#xf3;n y supervisi&#xf3;n del mantenimiento de equipos, medios t&#xe9;cnicos e instalaciones.&#xa;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel3">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Raleway" size="11" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="&#x2022;&#x9;Duraci&#xf3;n aproximada:&#xa;      10 minutos.&#xa;"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel4">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Raleway" size="11" style="0"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="text" type="java.lang.String" value="&#x2022;&#x9;Nivel de dificultad:&#xa;&#x9; F&#xe1;cil.&#xa;"/>
           </Properties>
         </Component>
       </SubComponents>
