@@ -5,11 +5,10 @@
 package main;
 
 import java.awt.Image;
-import java.awt.event.ComponentAdapter;
-import java.awt.event.ComponentEvent;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.SwingUtilities;
 
 /**
  *
@@ -40,6 +39,7 @@ public class HomeController extends javax.swing.JPanel {
         Button5 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         bg.setBackground(new java.awt.Color(10, 38, 72));
         bg.setBorder(javax.swing.BorderFactory.createEmptyBorder(100, 100, 100, 100));
@@ -48,6 +48,7 @@ public class HomeController extends javax.swing.JPanel {
 
         Button0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton0.png"))); // NOI18N
+        Button0.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button0.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Button0MouseClicked(evt);
@@ -63,6 +64,7 @@ public class HomeController extends javax.swing.JPanel {
 
         Button1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton1.png"))); // NOI18N
+        Button1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Button1MouseClicked(evt);
@@ -78,6 +80,7 @@ public class HomeController extends javax.swing.JPanel {
 
         Button2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton2.png"))); // NOI18N
+        Button2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Button2MouseClicked(evt);
@@ -93,6 +96,7 @@ public class HomeController extends javax.swing.JPanel {
 
         Button3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton3.png"))); // NOI18N
+        Button3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Button3MouseClicked(evt);
@@ -108,6 +112,7 @@ public class HomeController extends javax.swing.JPanel {
 
         Button4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton4.png"))); // NOI18N
+        Button4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Button4MouseClicked(evt);
@@ -123,6 +128,7 @@ public class HomeController extends javax.swing.JPanel {
 
         Button5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Button5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/HomeButton5.png"))); // NOI18N
+        Button5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Button5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 Button5MouseClicked(evt);
@@ -136,16 +142,7 @@ public class HomeController extends javax.swing.JPanel {
         });
         bg.add(Button5);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(bg, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
+        add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
     private void Button5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseExited
@@ -231,7 +228,11 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button0MouseEntered
 
     private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
-
+        System.out.println("Button0MouseClicked called");
+        GameController gameController = new GameController();
+        gameController.setSize(1540, 870);
+        gameController.setLocation(0, 0);
+        parent.PaintHomeController(gameController);       
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName) {
         Icon icon = labelName.getIcon(); 
@@ -241,7 +242,6 @@ public class HomeController extends javax.swing.JPanel {
         ImageIcon scaledIcon = new ImageIcon(scaledImage);
         labelName.setIcon(scaledIcon);
         this.repaint();
-    
 }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -11,6 +11,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -26,16 +27,13 @@ public class LauncherBase extends javax.swing.JFrame {
         home.indiceGradoActual = index;
         return home;
     }
-    public void PaintHomeController(HomeController home) {
-        
+    public void PaintHomeController(JComponent component) {
         setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         content.removeAll();
-        content.add(home, BorderLayout.CENTER);
+        content.add(component, BorderLayout.CENTER);
         content.revalidate();
         content.repaint();
-        
-    }
-    
+}
 
     private void SetImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);
@@ -44,26 +42,18 @@ public class LauncherBase extends javax.swing.JFrame {
         labelName.repaint();
     }
     
-    
+        
     public LauncherBase() {
         initComponents();
         this.setLocationRelativeTo(this);
         
         HomeController home = CreateHomeController(0);
+        System.out.println("HomeController created");
         PaintHomeController(home);
 
         
     }
-   private void ShowPanel(JPanel p){
-        
-        p.setSize(1540, 870);
-        p.setLocation(0, 0);
-        
-        content.removeAll();
-        content.add(p, BorderLayout.CENTER);
-        content.revalidate();
-        content.repaint(); 
-    }
+
       
 
     
@@ -520,13 +510,14 @@ public class LauncherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_Escudo12MouseExited
 
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
-       HomeController home = CreateHomeController(9);
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(0);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo8MouseClicked
 
     private void Escudo0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseClicked
-        HomeController home = CreateHomeController(1);
-       PaintHomeController(home);
+
     }//GEN-LAST:event_Escudo0MouseClicked
 
     private void Escudo8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseEntered
