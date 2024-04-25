@@ -89,7 +89,7 @@ public class GameController extends javax.swing.JPanel {
         jLabel4.setFont(new java.awt.Font("Raleway", 0, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel4.setText("•\tNivel de dificultad:\n\t Fácil.\n");
+        jLabel4.setText("•\tNivel de dificultad:\n\t Fácil.\n\n");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
