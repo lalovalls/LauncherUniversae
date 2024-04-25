@@ -37,7 +37,7 @@ public class GameController extends javax.swing.JPanel {
         Punto4 = new javax.swing.JLabel();
         Punto5 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
-        TituloDeTexto1 = new javax.swing.JLabel();
+        Texto = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -72,11 +72,11 @@ public class GameController extends javax.swing.JPanel {
         TituloDeTexto.setText("Embarque y desembarque en helicóptero\n\n");
         TituloDeTexto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
-        TituloDeTexto1.setFont(new java.awt.Font("Raleway", 0, 11)); // NOI18N
-        TituloDeTexto1.setForeground(new java.awt.Color(255, 255, 255));
-        TituloDeTexto1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        TituloDeTexto1.setText("<html>Descripción: En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incedios forestales.<br><br>\n\nGrado, asginatura y unidad: Coordinación de emergencias y protección civil, Gestión de recursos de emergencias y protección civil y Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones<br><br>\n\nDuración aproximada: 10 minutos<br><br>\n\nNivel de dificultad: Fácil</html> \n\n\n");
-        TituloDeTexto1.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        Texto.setFont(new java.awt.Font("Raleway", 0, 11)); // NOI18N
+        Texto.setForeground(new java.awt.Color(255, 255, 255));
+        Texto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        Texto.setText("<html>Descripción: En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incedios forestales.<br><br>\n\nGrado, asginatura y unidad: Coordinación de emergencias y protección civil, Gestión de recursos de emergencias y protección civil y Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones<br><br>\n\nDuración aproximada: 10 minutos<br><br>\n\nNivel de dificultad: Fácil</html> \n\n\n");
+        Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -107,7 +107,7 @@ public class GameController extends javax.swing.JPanel {
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                                     .addGroup(jPanel1Layout.createSequentialGroup()
                                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(TituloDeTexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(Texto, javax.swing.GroupLayout.PREFERRED_SIZE, 720, javax.swing.GroupLayout.PREFERRED_SIZE)
                                             .addComponent(TituloDeTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE))
                                         .addGap(38, 38, 38)))
                                 .addComponent(Punto3)
@@ -142,7 +142,7 @@ public class GameController extends javax.swing.JPanel {
                         .addGap(21, 21, 21)
                         .addComponent(TituloDeTexto, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TituloDeTexto1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Texto, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(161, 161, 161))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -173,8 +173,8 @@ public class GameController extends javax.swing.JPanel {
     private javax.swing.JLabel Punto3;
     private javax.swing.JLabel Punto4;
     private javax.swing.JLabel Punto5;
+    private javax.swing.JLabel Texto;
     private javax.swing.JLabel TituloDeTexto;
-    private javax.swing.JLabel TituloDeTexto1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
