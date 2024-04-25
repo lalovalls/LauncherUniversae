@@ -27,6 +27,7 @@ public class LauncherBase extends javax.swing.JFrame {
         
         HomeController hm = new HomeController();
         ShowPanel(hm);
+
         
     }
    private void ShowPanel(JPanel p){

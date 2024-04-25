@@ -159,7 +159,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button5MouseEntered
 
     private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_Button5MouseClicked
 
     private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
@@ -173,7 +173,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button4MouseEntered
 
     private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_Button4MouseClicked
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
@@ -187,7 +187,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button3MouseEntered
 
     private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_Button3MouseClicked
 
     private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
@@ -201,7 +201,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button2MouseEntered
 
     private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_Button2MouseClicked
 
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
@@ -215,7 +215,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button1MouseEntered
 
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_Button1MouseClicked
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
@@ -231,7 +231,7 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button0MouseEntered
 
     private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName) {
         Icon icon = labelName.getIcon(); 
@@ -253,5 +253,9 @@ public class HomeController extends javax.swing.JPanel {
     private javax.swing.JLabel Button5;
     private javax.swing.JPanel bg;
     // End of variables declaration//GEN-END:variables
+
+    private void ShowPanel(GameController gm) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
 
