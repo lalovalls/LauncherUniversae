@@ -67,9 +67,9 @@ public class GameController extends javax.swing.JPanel {
           
     Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
     Punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
-    Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
-    Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
     Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+    Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+    Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
 
     switch(indice) {
         case 0:
@@ -103,9 +103,9 @@ public class GameController extends javax.swing.JPanel {
         FlechaIzquierda = new javax.swing.JLabel();
         Punto1 = new javax.swing.JLabel();
         Punto2 = new javax.swing.JLabel();
-        Punto3 = new javax.swing.JLabel();
-        Punto4 = new javax.swing.JLabel();
         Punto5 = new javax.swing.JLabel();
+        Punto4 = new javax.swing.JLabel();
+        Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
 
@@ -155,11 +155,11 @@ public class GameController extends javax.swing.JPanel {
 
         Punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
 
-        Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+        Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
 
         Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
 
-        Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+        Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
 
         TituloDeTexto.setFont(new java.awt.Font("Raleway Black", 1, 16)); // NOI18N
         TituloDeTexto.setForeground(new java.awt.Color(255, 255, 255));
@@ -191,11 +191,11 @@ public class GameController extends javax.swing.JPanel {
                 .addGap(6, 6, 6)
                 .addComponent(Punto2)
                 .addGap(6, 6, 6)
-                .addComponent(Punto5)
+                .addComponent(Punto3)
                 .addGap(6, 6, 6)
                 .addComponent(Punto4)
                 .addGap(6, 6, 6)
-                .addComponent(Punto3))
+                .addComponent(Punto5))
             .addGroup(bgLayout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addComponent(TituloDeTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -222,9 +222,9 @@ public class GameController extends javax.swing.JPanel {
                 .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Punto1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(Punto2)
-                    .addComponent(Punto5)
+                    .addComponent(Punto3)
                     .addComponent(Punto4)
-                    .addComponent(Punto3))
+                    .addComponent(Punto5))
                 .addGap(21, 21, 21)
                 .addComponent(TituloDeTexto)
                 .addGap(12, 12, 12)

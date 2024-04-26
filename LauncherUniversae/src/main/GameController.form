@@ -61,11 +61,11 @@
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="Punto2" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="Punto5" min="-2" max="-2" attributes="0"/>
+                  <Component id="Punto3" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
                   <Component id="Punto4" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
-                  <Component id="Punto3" min="-2" max="-2" attributes="0"/>
+                  <Component id="Punto5" min="-2" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace min="37" pref="37" max="-2" attributes="0"/>
@@ -100,9 +100,9 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="Punto1" min="-2" pref="17" max="-2" attributes="0"/>
                       <Component id="Punto2" min="-2" max="-2" attributes="0"/>
-                      <Component id="Punto5" min="-2" max="-2" attributes="0"/>
-                      <Component id="Punto4" min="-2" max="-2" attributes="0"/>
                       <Component id="Punto3" min="-2" max="-2" attributes="0"/>
+                      <Component id="Punto4" min="-2" max="-2" attributes="0"/>
+                      <Component id="Punto5" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
                   <Component id="TituloDeTexto" min="-2" max="-2" attributes="0"/>
@@ -177,7 +177,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Punto3">
+        <Component class="javax.swing.JLabel" name="Punto5">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagenes/PuntoCarruselEmpty.png"/>
@@ -191,7 +191,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="Punto5">
+        <Component class="javax.swing.JLabel" name="Punto3">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagenes/PuntoCarruselEmpty.png"/>
