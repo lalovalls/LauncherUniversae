@@ -101,10 +101,10 @@ public class GameController extends javax.swing.JPanel {
         bg = new javax.swing.JPanel();
         Comenzar = new javax.swing.JLabel();
         ImagenFondo = new javax.swing.JLabel();
+        FlechaIzquierda = new javax.swing.JLabel();
+        FlechaDerecha = new javax.swing.JLabel();
         PlaceHolder = new javax.swing.JLabel();
         PlaceHolder1 = new javax.swing.JLabel();
-        FlechaDerecha = new javax.swing.JLabel();
-        FlechaIzquierda = new javax.swing.JLabel();
         Punto1 = new javax.swing.JLabel();
         Punto2 = new javax.swing.JLabel();
         Punto5 = new javax.swing.JLabel();
@@ -129,15 +129,22 @@ public class GameController extends javax.swing.JPanel {
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, -10, 891, 525));
+        bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 
-        PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 990, 420));
-
-        PlaceHolder1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 1000, 420));
+        FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha izquierda.png"))); // NOI18N
+        FlechaIzquierda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        FlechaIzquierda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FlechaIzquierdaMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                FlechaIzquierdaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                FlechaIzquierdaMouseExited(evt);
+            }
+        });
+        bg.add(FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, -1, -1));
 
         FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha derecha.png"))); // NOI18N
         FlechaDerecha.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -154,20 +161,13 @@ public class GameController extends javax.swing.JPanel {
         });
         bg.add(FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 240, -1, -1));
 
-        FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha izquierda.png"))); // NOI18N
-        FlechaIzquierda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        FlechaIzquierda.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                FlechaIzquierdaMouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                FlechaIzquierdaMouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                FlechaIzquierdaMouseExited(evt);
-            }
-        });
-        bg.add(FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, -1, -1));
+        PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
+        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 990, 420));
+
+        PlaceHolder1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PlaceHolder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
+        bg.add(PlaceHolder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 1000, 420));
 
         Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
         bg.add(Punto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 504, -1, 17));
