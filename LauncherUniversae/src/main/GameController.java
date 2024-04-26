@@ -4,8 +4,11 @@
  */
 package main;
 
+import java.awt.Image;
 import java.util.ArrayList;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  *
@@ -35,26 +38,37 @@ public class GameController extends javax.swing.JPanel {
         currentIndex = 0;
     }
 
-    private void showImage() {
+    private void mostrarImagen() {
         if (!imagenes.isEmpty()) {
             ImageIcon currentImage = imagenes.get(currentIndex);
             ImagenFondo.setIcon(currentImage);
+            setImageLabel(ImagenFondo);
         }
     }
 
     private void showPreviousImage() {
         if (!imagenes.isEmpty()) {
             currentIndex = (currentIndex - 1 + imagenes.size()) % imagenes.size();
-            showImage();
+            mostrarImagen();
         }
     }
 
     private void showNextImage() {
         if (!imagenes.isEmpty()) {
             currentIndex = (currentIndex + 1) % imagenes.size();
-            showImage();
+            mostrarImagen();
         }
     }
+      private void setImageLabel(JLabel labelName) {
+        Icon icon = labelName.getIcon(); 
+        ImageIcon imageIcon = (ImageIcon) icon;
+        Image image = imageIcon.getImage();
+        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
+        ImageIcon scaledIcon = new ImageIcon(scaledImage);
+        labelName.setIcon(scaledIcon);
+        this.repaint();
+}
+    
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
