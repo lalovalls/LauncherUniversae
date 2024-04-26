@@ -44,7 +44,7 @@ public class GameController extends javax.swing.JPanel {
     }
 
     private void showPreviousImage() {
-        indice = (indice - 1) % imagenes.size();
+        indice = (indice - 1 + imagenes.size()) % imagenes.size();
         mostrarImagen();
     
     }
