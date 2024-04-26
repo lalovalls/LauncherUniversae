@@ -19,7 +19,6 @@ public class GameController extends javax.swing.JPanel {
     
     public GameController() {
         initComponents();
-        System.out.println("GameController initialized");
     }
 
     

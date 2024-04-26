@@ -48,7 +48,6 @@ public class LauncherBase extends javax.swing.JFrame {
         this.setLocationRelativeTo(this);
         
         HomeController home = CreateHomeController(0);
-        System.out.println("HomeController created");
         PaintHomeController(home);
 
         
