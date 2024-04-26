@@ -13,43 +13,44 @@ import javax.swing.ImageIcon;
  */
 public class GameController extends javax.swing.JPanel {
     
-    private ArrayList<ImageIcon> images;
+    private ArrayList<ImageIcon> imagenes;
     private int currentIndex;
     
     
     public GameController() {
         initComponents();
+        cargaImagenes();
     }
 
     
-    private void loadImages() {
-        images = new ArrayList<>();
-        images.add(new ImageIcon(getClass().getResource("src/imagenes/Helicoptero0.jpg")));
-        images.add(new ImageIcon(getClass().getResource("src/imagenes/Helicoptero1.jpg")));
-        images.add(new ImageIcon(getClass().getResource("src/imagenes/Helicoptero2.jpg")));
-        images.add(new ImageIcon(getClass().getResource("src/imagenes/Helicoptero3.jpg")));
-        images.add(new ImageIcon(getClass().getResource("src/imagenes/Helicoptero4.jpg")));
+    private void cargaImagenes() {
+        imagenes = new ArrayList<>();                     
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero0.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero1.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero2.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero3.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero4.png")));
 
         currentIndex = 0;
     }
 
     private void showImage() {
-        if (!images.isEmpty()) {
-            ImageIcon currentImage = images.get(currentIndex);
+        if (!imagenes.isEmpty()) {
+            ImageIcon currentImage = imagenes.get(currentIndex);
             ImagenFondo.setIcon(currentImage);
         }
     }
 
     private void showPreviousImage() {
-        if (!images.isEmpty()) {
-            currentIndex = (currentIndex - 1 + images.size()) % images.size();
+        if (!imagenes.isEmpty()) {
+            currentIndex = (currentIndex - 1 + imagenes.size()) % imagenes.size();
             showImage();
         }
     }
 
     private void showNextImage() {
-        if (!images.isEmpty()) {
-            currentIndex = (currentIndex + 1) % images.size();
+        if (!imagenes.isEmpty()) {
+            currentIndex = (currentIndex + 1) % imagenes.size();
             showImage();
         }
     }
