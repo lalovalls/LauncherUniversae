@@ -21,26 +21,30 @@ public class GameController extends javax.swing.JPanel {
     
     
     public GameController() {
+        
         initComponents();
-        cargaImagenes();        
+        cargaImagenes();       
+                     
     }
 
     
     private void cargaImagenes() {
+        
         imagenes = new ArrayList<>();                     
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
+        
     }
 
     private void mostrarImagen() {
         ImageIcon currentImage = imagenes.get(indice);
         ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo);
+        setImageLabel(ImagenFondo, "src/imagenes/Embarque0.png");
         actualizarPuntos();
-        
+        setImageLabel(PlaceHolder, "src/imagenes/Cuadrado fondo enfocado.png");
     }
 
     private void showPreviousImage() {
@@ -54,15 +58,12 @@ public class GameController extends javax.swing.JPanel {
         mostrarImagen();
 
     }
-      private void setImageLabel(JLabel labelName) {
-        Icon icon = labelName.getIcon(); 
-        ImageIcon imageIcon = (ImageIcon) icon;
-        Image image = imageIcon.getImage();
-        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon scaledIcon = new ImageIcon(scaledImage);
-        labelName.setIcon(scaledIcon);
-        this.repaint();
-}
+      private void setImageLabel(JLabel labelName, String root){
+        ImageIcon image = new ImageIcon(root);
+        Icon icon = new ImageIcon ( image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
+        labelName.setIcon(icon);
+        labelName.repaint();
+    }
       private void actualizarPuntos() {
           
     Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
@@ -99,6 +100,7 @@ public class GameController extends javax.swing.JPanel {
         bg = new javax.swing.JPanel();
         Comenzar = new javax.swing.JLabel();
         ImagenFondo = new javax.swing.JLabel();
+        PlaceHolder = new javax.swing.JLabel();
         FlechaDerecha = new javax.swing.JLabel();
         FlechaIzquierda = new javax.swing.JLabel();
         Punto1 = new javax.swing.JLabel();
@@ -108,7 +110,6 @@ public class GameController extends javax.swing.JPanel {
         Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
-        PlaceHolder = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -124,7 +125,15 @@ public class GameController extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
+        ImagenFondo.setMaximumSize(new java.awt.Dimension(820, 480));
+        ImagenFondo.setMinimumSize(new java.awt.Dimension(820, 480));
+        ImagenFondo.setPreferredSize(new java.awt.Dimension(820, 480));
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 820, 480));
+
+        PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
+        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 70, 990, 360));
 
         FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha derecha.png"))); // NOI18N
         FlechaDerecha.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -139,7 +148,7 @@ public class GameController extends javax.swing.JPanel {
                 FlechaDerechaMouseExited(evt);
             }
         });
-        bg.add(FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 240, -1, -1));
+        bg.add(FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 240, -1, -1));
 
         FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha izquierda.png"))); // NOI18N
         FlechaIzquierda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -154,7 +163,7 @@ public class GameController extends javax.swing.JPanel {
                 FlechaIzquierdaMouseExited(evt);
             }
         });
-        bg.add(FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, -1, -1));
+        bg.add(FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 240, -1, -1));
 
         Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
         bg.add(Punto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 504, -1, 17));
@@ -186,10 +195,6 @@ public class GameController extends javax.swing.JPanel {
         Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         bg.add(Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 730, 140));
 
-        PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 90, 940, 320));
-
         add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 874));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -198,11 +203,13 @@ public class GameController extends javax.swing.JPanel {
     }//GEN-LAST:event_FlechaIzquierdaMouseClicked
 
     private void FlechaIzquierdaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaIzquierdaMouseEntered
-        // TODO add your handling code here:
+        FlechaIzquierda.setSize(25, 38);
+        setImageLabel(FlechaIzquierda, "src/imagenes/Flecha izquierda.png");
     }//GEN-LAST:event_FlechaIzquierdaMouseEntered
 
     private void FlechaIzquierdaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaIzquierdaMouseExited
-        // TODO add your handling code here:
+        FlechaIzquierda.setSize(22, 35);
+        setImageLabel(FlechaIzquierda, "src/imagenes/Flecha izquierda.png");
     }//GEN-LAST:event_FlechaIzquierdaMouseExited
 
     private void FlechaDerechaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaDerechaMouseClicked
@@ -210,11 +217,13 @@ public class GameController extends javax.swing.JPanel {
     }//GEN-LAST:event_FlechaDerechaMouseClicked
 
     private void FlechaDerechaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaDerechaMouseEntered
-        // TODO add your handling code here:
+        FlechaDerecha.setSize(25, 38);
+        setImageLabel(FlechaDerecha, "src/imagenes/Flecha derecha.png");        
     }//GEN-LAST:event_FlechaDerechaMouseEntered
 
     private void FlechaDerechaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaDerechaMouseExited
-        // TODO add your handling code here:
+        FlechaDerecha.setSize(22, 35);
+        setImageLabel(FlechaDerecha, "src/imagenes/Flecha derecha.png");        
     }//GEN-LAST:event_FlechaDerechaMouseExited
 
 

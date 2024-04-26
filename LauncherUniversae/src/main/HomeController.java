@@ -147,12 +147,12 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseExited
         Button5.setSize(381, 291);
-        setImageLabel(Button5);
+        setImageLabel(Button5, "src/imagenes/HomeButton5.png");
     }//GEN-LAST:event_Button5MouseExited
 
     private void Button5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseEntered
         Button5.setSize(420, 320);
-        setImageLabel(Button5);
+        setImageLabel(Button5, "src/imagenes/HomeButton5.png");
     }//GEN-LAST:event_Button5MouseEntered
 
     private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
@@ -161,12 +161,12 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
         Button4.setSize(381, 291);
-        setImageLabel(Button4);
+        setImageLabel(Button4, "src/imagenes/HomeButton4.png");
     }//GEN-LAST:event_Button4MouseExited
 
     private void Button4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseEntered
         Button4.setSize(420, 320);
-        setImageLabel(Button4);
+        setImageLabel(Button4, "src/imagenes/HomeButton4.png");
     }//GEN-LAST:event_Button4MouseEntered
 
     private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
@@ -175,12 +175,12 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
         Button3.setSize(381, 291);
-        setImageLabel(Button3);
+        setImageLabel(Button3, "src/imagenes/HomeButton3.png");
     }//GEN-LAST:event_Button3MouseExited
 
     private void Button3MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseEntered
         Button3.setSize(420, 320);
-        setImageLabel(Button3);
+        setImageLabel(Button3, "src/imagenes/HomeButton3.png");
     }//GEN-LAST:event_Button3MouseEntered
 
     private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
@@ -189,12 +189,12 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
         Button2.setSize(381, 291);
-        setImageLabel(Button2);
+        setImageLabel(Button2, "src/imagenes/HomeButton2.png");
     }//GEN-LAST:event_Button2MouseExited
 
     private void Button2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseEntered
         Button2.setSize(420, 320);
-        setImageLabel(Button2);
+        setImageLabel(Button2, "src/imagenes/HomeButton2.png");
     }//GEN-LAST:event_Button2MouseEntered
 
     private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
@@ -203,12 +203,12 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
         Button1.setSize(381, 291);
-        setImageLabel(Button1);
+        setImageLabel(Button1, "src/imagenes/HomeButton1.png");
     }//GEN-LAST:event_Button1MouseExited
 
     private void Button1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseEntered
         Button1.setSize(420, 320);
-        setImageLabel(Button1);
+        setImageLabel(Button1, "src/imagenes/HomeButton1.png");
     }//GEN-LAST:event_Button1MouseEntered
 
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
@@ -217,13 +217,13 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
         Button0.setSize(381, 291);
-        setImageLabel(Button0);
+        setImageLabel(Button0, "src/imagenes/HomeButton0.png");
 
     }//GEN-LAST:event_Button0MouseExited
 
     private void Button0MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseEntered
         Button0.setSize(420, 320);
-        setImageLabel(Button0);
+        setImageLabel(Button0, "src/imagenes/HomeButton0.png");
 
     }//GEN-LAST:event_Button0MouseEntered
 
@@ -234,15 +234,12 @@ public class HomeController extends javax.swing.JPanel {
         gameController.setLocation(0, 0);
         parent.PaintHomeController(gameController);       
     }//GEN-LAST:event_Button0MouseClicked
-  private void setImageLabel(JLabel labelName) {
-        Icon icon = labelName.getIcon(); 
-        ImageIcon imageIcon = (ImageIcon) icon;
-        Image image = imageIcon.getImage();
-        Image scaledImage = image.getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH);
-        ImageIcon scaledIcon = new ImageIcon(scaledImage);
-        labelName.setIcon(scaledIcon);
-        this.repaint();
-}
+  private void setImageLabel(JLabel labelName, String root){
+        ImageIcon image = new ImageIcon(root);
+        Icon icon = new ImageIcon ( image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
+        labelName.setIcon(icon);
+        labelName.repaint();
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Button0;
