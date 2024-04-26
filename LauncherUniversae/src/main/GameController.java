@@ -37,12 +37,13 @@ public class GameController extends javax.swing.JPanel {
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
         
+        
     }
 
     private void mostrarImagen() {
         ImageIcon currentImage = imagenes.get(indice);
         ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Embarque0.png");
+        setImageLabel(ImagenFondo, "src/imagenes/Embarque" + indice +".png");        
         actualizarPuntos();
         setImageLabel(PlaceHolder, "src/imagenes/Cuadrado fondo enfocado.png");
     }
@@ -110,6 +111,7 @@ public class GameController extends javax.swing.JPanel {
         Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
+        ImagenFondo1 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -126,10 +128,8 @@ public class GameController extends javax.swing.JPanel {
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
-        ImagenFondo.setMaximumSize(new java.awt.Dimension(820, 480));
-        ImagenFondo.setMinimumSize(new java.awt.Dimension(820, 480));
-        ImagenFondo.setPreferredSize(new java.awt.Dimension(820, 480));
-        bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 820, 480));
+        ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, -10, 891, 525));
 
         PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
@@ -195,6 +195,11 @@ public class GameController extends javax.swing.JPanel {
         Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         bg.add(Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 730, 140));
 
+        ImagenFondo1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        ImagenFondo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
+        ImagenFondo1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        bg.add(ImagenFondo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, -10, 891, 525));
+
         add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 874));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -232,6 +237,7 @@ public class GameController extends javax.swing.JPanel {
     private javax.swing.JLabel FlechaDerecha;
     private javax.swing.JLabel FlechaIzquierda;
     private javax.swing.JLabel ImagenFondo;
+    private javax.swing.JLabel ImagenFondo1;
     private javax.swing.JLabel PlaceHolder;
     private javax.swing.JLabel Punto1;
     private javax.swing.JLabel Punto2;
