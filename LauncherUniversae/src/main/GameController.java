@@ -22,7 +22,7 @@ public class GameController extends javax.swing.JPanel {
     
     public GameController() {
         initComponents();
-        cargaImagenes();
+        cargaImagenes();        
     }
 
     
@@ -108,6 +108,7 @@ public class GameController extends javax.swing.JPanel {
         Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
+        PlaceHolder = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -116,12 +117,14 @@ public class GameController extends javax.swing.JPanel {
         bg.setBackground(new java.awt.Color(10, 38, 72));
         bg.setMinimumSize(new java.awt.Dimension(1427, 824));
         bg.setPreferredSize(new java.awt.Dimension(1540, 870));
+        bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
         Comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
+        bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 10, 820, 480));
 
         FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha derecha.png"))); // NOI18N
         FlechaDerecha.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -136,6 +139,7 @@ public class GameController extends javax.swing.JPanel {
                 FlechaDerechaMouseExited(evt);
             }
         });
+        bg.add(FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 240, -1, -1));
 
         FlechaIzquierda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha izquierda.png"))); // NOI18N
         FlechaIzquierda.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -150,88 +154,41 @@ public class GameController extends javax.swing.JPanel {
                 FlechaIzquierdaMouseExited(evt);
             }
         });
+        bg.add(FlechaIzquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 240, -1, -1));
 
         Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
+        bg.add(Punto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 504, -1, 17));
 
         Punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+        bg.add(Punto2, new org.netbeans.lib.awtextra.AbsoluteConstraints(729, 504, -1, -1));
 
         Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+        bg.add(Punto5, new org.netbeans.lib.awtextra.AbsoluteConstraints(795, 504, -1, -1));
 
         Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+        bg.add(Punto4, new org.netbeans.lib.awtextra.AbsoluteConstraints(773, 504, -1, -1));
 
         Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png"))); // NOI18N
+        bg.add(Punto3, new org.netbeans.lib.awtextra.AbsoluteConstraints(751, 504, -1, -1));
 
-        TituloDeTexto.setFont(new java.awt.Font("Raleway Black", 1, 16)); // NOI18N
+        TituloDeTexto.setFont(new java.awt.Font("Raleway Black", 1, 18)); // NOI18N
         TituloDeTexto.setForeground(new java.awt.Color(255, 255, 255));
         TituloDeTexto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         TituloDeTexto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Barrita aislada descripción.png"))); // NOI18N
         TituloDeTexto.setText("Embarque y desembarque en helicóptero\n\n");
         TituloDeTexto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        bg.add(TituloDeTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 542, 510, -1));
 
-        Texto.setFont(new java.awt.Font("Raleway", 0, 11)); // NOI18N
+        Texto.setFont(new java.awt.Font("Raleway", 0, 12)); // NOI18N
         Texto.setForeground(new java.awt.Color(255, 255, 255));
         Texto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         Texto.setText("<html>Descripción: En un campo de prácticas sumido en el desorden y la confusión tienes que encontrar y colocar las partes de los EPIs utilizados en la extinción de incedios forestales.<br><br>\n\nGrado, asginatura y unidad: Coordinación de emergencias y protección civil, Gestión de recursos de emergencias y protección civil y Planificación y supervisión del mantenimiento de equipos, medios técnicos e instalaciones<br><br>\n\nDuración aproximada: 10 minutos<br><br>\n\nNivel de dificultad: Fácil</html> \n\n\n");
         Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        bg.add(Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 600, 730, 140));
 
-        javax.swing.GroupLayout bgLayout = new javax.swing.GroupLayout(bg);
-        bg.setLayout(bgLayout);
-        bgLayout.setHorizontalGroup(
-            bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bgLayout.createSequentialGroup()
-                .addGap(349, 349, 349)
-                .addComponent(FlechaIzquierda)
-                .addGap(6, 6, 6)
-                .addComponent(ImagenFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 783, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(12, 12, 12)
-                .addComponent(FlechaDerecha))
-            .addGroup(bgLayout.createSequentialGroup()
-                .addGap(708, 708, 708)
-                .addComponent(Punto1)
-                .addGap(6, 6, 6)
-                .addComponent(Punto2)
-                .addGap(6, 6, 6)
-                .addComponent(Punto3)
-                .addGap(6, 6, 6)
-                .addComponent(Punto4)
-                .addGap(6, 6, 6)
-                .addComponent(Punto5))
-            .addGroup(bgLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(TituloDeTexto, javax.swing.GroupLayout.PREFERRED_SIZE, 510, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(bgLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(Texto, javax.swing.GroupLayout.PREFERRED_SIZE, 730, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(bgLayout.createSequentialGroup()
-                .addGap(1234, 1234, 1234)
-                .addComponent(Comenzar))
-        );
-        bgLayout.setVerticalGroup(
-            bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bgLayout.createSequentialGroup()
-                .addGap(67, 67, 67)
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(bgLayout.createSequentialGroup()
-                        .addGap(177, 177, 177)
-                        .addComponent(FlechaIzquierda))
-                    .addComponent(ImagenFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 419, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(bgLayout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(FlechaDerecha)))
-                .addGap(18, 18, 18)
-                .addGroup(bgLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Punto1, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Punto2)
-                    .addComponent(Punto3)
-                    .addComponent(Punto4)
-                    .addComponent(Punto5))
-                .addGap(21, 21, 21)
-                .addComponent(TituloDeTexto)
-                .addGap(12, 12, 12)
-                .addComponent(Texto, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(48, 48, 48)
-                .addComponent(Comenzar))
-        );
+        PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
+        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(297, 90, 940, 320));
 
         add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 874));
     }// </editor-fold>//GEN-END:initComponents
@@ -266,6 +223,7 @@ public class GameController extends javax.swing.JPanel {
     private javax.swing.JLabel FlechaDerecha;
     private javax.swing.JLabel FlechaIzquierda;
     private javax.swing.JLabel ImagenFondo;
+    private javax.swing.JLabel PlaceHolder;
     private javax.swing.JLabel Punto1;
     private javax.swing.JLabel Punto2;
     private javax.swing.JLabel Punto3;
