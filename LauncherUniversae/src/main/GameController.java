@@ -17,12 +17,11 @@ import javax.swing.JLabel;
 public class GameController extends javax.swing.JPanel {
     
     private ArrayList<ImageIcon> imagenes;
-    private int currentIndex;
+    private int indice;
     
     
     public GameController() {
         initComponents();
-        
         cargaImagenes();
     }
 
@@ -34,30 +33,26 @@ public class GameController extends javax.swing.JPanel {
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
         imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
-
-        currentIndex = 0;
     }
 
     private void mostrarImagen() {
-        if (!imagenes.isEmpty()) {
-            ImageIcon currentImage = imagenes.get(currentIndex);
-            ImagenFondo.setIcon(currentImage);
-            setImageLabel(ImagenFondo);
-        }
+        ImageIcon currentImage = imagenes.get(indice);
+        ImagenFondo.setIcon(currentImage);
+        setImageLabel(ImagenFondo);
+        actualizarPuntos();
+        
     }
 
     private void showPreviousImage() {
-        if (!imagenes.isEmpty()) {
-            currentIndex = (currentIndex - 1 + imagenes.size()) % imagenes.size();
-            mostrarImagen();
-        }
+        indice = (indice - 1) % imagenes.size();
+        mostrarImagen();
+    
     }
 
     private void showNextImage() {
-        if (!imagenes.isEmpty()) {
-            currentIndex = (currentIndex + 1) % imagenes.size();
-            mostrarImagen();
-        }
+        indice = (indice + 1) % imagenes.size();
+        mostrarImagen();
+
     }
       private void setImageLabel(JLabel labelName) {
         Icon icon = labelName.getIcon(); 
@@ -68,6 +63,33 @@ public class GameController extends javax.swing.JPanel {
         labelName.setIcon(scaledIcon);
         this.repaint();
 }
+      private void actualizarPuntos() {
+          
+    Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+    Punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+    Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+    Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+    Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
+
+    switch(indice) {
+        case 0:
+            Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png")));
+            break;
+        case 1:
+            Punto2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png")));
+            break;
+        case 2:
+            Punto3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png")));
+            break;
+        case 3:
+            Punto4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png")));
+            break;
+        case 4:
+            Punto5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png")));
+            break;
+    }
+}
+
     
     
     @SuppressWarnings("unchecked")
