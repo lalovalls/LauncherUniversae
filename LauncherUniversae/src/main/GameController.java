@@ -29,11 +29,11 @@ public class GameController extends javax.swing.JPanel {
     
     private void cargaImagenes() {
         imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero4.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
 
         currentIndex = 0;
     }
@@ -98,6 +98,7 @@ public class GameController extends javax.swing.JPanel {
         Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
         Comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
+        ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
 
         FlechaDerecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Flecha derecha.png"))); // NOI18N
