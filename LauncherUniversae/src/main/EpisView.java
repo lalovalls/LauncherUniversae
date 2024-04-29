@@ -127,7 +127,7 @@ public class EpisView extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/EPIS0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 
