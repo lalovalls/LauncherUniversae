@@ -215,7 +215,7 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/imagenes/Barrita aislada descripci&#xf3;n.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Embarque y desembarque en helic&#xf3;ptero&#xa;&#xa;"/>
+            <Property name="text" type="java.lang.String" value="Protocolo ante una hemorragia"/>
             <Property name="verticalAlignment" type="int" value="1"/>
           </Properties>
           <Constraints>
