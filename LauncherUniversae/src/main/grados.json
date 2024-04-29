@@ -1,0 +1,525 @@
+{
+    "grados": 
+    
+    [
+
+      {
+        "nombres": "Grado 1",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 2",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 3",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 4",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 5",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 6",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 7",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 8",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 9",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 10",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 11",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      },
+      {
+        "nombres": "Grado 12",
+        "juegos": 
+        
+        [
+          {
+            "titulo": "Embarque y desembarque de un helicoptero",
+            "imagenes": [""],
+            "ruta": "",
+            "descripcion": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Protocolo ante una hemorragia externa ",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Maniobras de extincion segun la instalacion",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Señalizacion a helicoptero desde tierra",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          },
+          {
+            "titulo": "Rescate en ascensor",
+            "imagenes": [""],
+            "ruta": "",
+            "enlace": "<html>lorem</html>"
+          }
+        ]
+      }
+     
+    ]
+  }
+  
