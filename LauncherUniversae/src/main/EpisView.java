@@ -31,11 +31,11 @@ public class EpisView extends javax.swing.JPanel {
     private void cargaImagenes() {
         
         imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS0.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS1.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS2.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS3.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS4.png")));
         
         
     }
@@ -43,7 +43,7 @@ public class EpisView extends javax.swing.JPanel {
     private void mostrarImagen() {
         ImageIcon currentImage = imagenes.get(indice);
         ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Embarque" + indice +".png");        
+        setImageLabel(ImagenFondo, "src/imagenes/EPIS" + indice +".png");        
         actualizarPuntos();
         
     }

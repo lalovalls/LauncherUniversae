@@ -31,11 +31,11 @@ public class ExtincionView extends javax.swing.JPanel {
     private void cargaImagenes() {
         
         imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion0.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion1.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion2.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion3.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion4.png")));
         
         
     }
@@ -43,7 +43,7 @@ public class ExtincionView extends javax.swing.JPanel {
     private void mostrarImagen() {
         ImageIcon currentImage = imagenes.get(indice);
         ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Embarque" + indice +".png");        
+        setImageLabel(ImagenFondo, "src/imagenes/Extincion" + indice +".png");        
         actualizarPuntos();
         
     }
