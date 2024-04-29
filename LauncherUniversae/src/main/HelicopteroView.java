@@ -31,11 +31,11 @@ public class HelicopteroView extends javax.swing.JPanel {
     private void cargaImagenes() {
         
         imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero0.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero1.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero2.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero3.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero4.png")));
         
         
     }
@@ -43,7 +43,7 @@ public class HelicopteroView extends javax.swing.JPanel {
     private void mostrarImagen() {
         ImageIcon currentImage = imagenes.get(indice);
         ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Embarque" + indice +".png");        
+        setImageLabel(ImagenFondo, "src/imagenes/Helicoptero" + indice +".png");        
         actualizarPuntos();
         
     }
@@ -127,7 +127,7 @@ public class HelicopteroView extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Helicoptero0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 

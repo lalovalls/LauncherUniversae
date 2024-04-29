@@ -224,10 +224,17 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button1MouseEntered
 
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
+<<<<<<< Updated upstream
         HemorragiaView hemorragiaView = new HemorragiaView();
         hemorragiaView.setSize(1540, 870);
         hemorragiaView.setLocation(0, 0);
         parent.PaintHomeController(hemorragiaView);
+=======
+        HelicopteroView helicopteroView = new HelicopteroView();
+        helicopteroView.setSize(1540, 870);
+        helicopteroView.setLocation(0, 0);
+        parent.PaintHomeController(helicopteroView);   
+>>>>>>> Stashed changes
     }//GEN-LAST:event_Button1MouseClicked
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited

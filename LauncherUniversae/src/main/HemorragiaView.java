@@ -31,11 +31,11 @@ public class HemorragiaView extends javax.swing.JPanel {
     private void cargaImagenes() {
         
         imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Hemorragia0.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Hemorragia1.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Hemorragia2.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Hemorragia3.png")));
+        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Hemorragia4.png")));
         
         
     }
