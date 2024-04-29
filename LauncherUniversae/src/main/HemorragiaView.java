@@ -188,7 +188,7 @@ public class HemorragiaView extends javax.swing.JPanel {
         TituloDeTexto.setForeground(new java.awt.Color(255, 255, 255));
         TituloDeTexto.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         TituloDeTexto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Barrita aislada descripción.png"))); // NOI18N
-        TituloDeTexto.setText("Protocolo ante una hemorragia");
+        TituloDeTexto.setText("Protocolo ante una hemorragia externa");
         TituloDeTexto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         bg.add(TituloDeTexto, new org.netbeans.lib.awtextra.AbsoluteConstraints(37, 542, 510, -1));
 
