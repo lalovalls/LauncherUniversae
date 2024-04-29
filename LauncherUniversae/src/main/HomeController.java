@@ -228,7 +228,6 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button0MouseEntered
 
     private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
-        System.out.println("Button0MouseClicked called");
         GameController gameController = new GameController();
         gameController.setSize(1540, 870);
         gameController.setLocation(0, 0);

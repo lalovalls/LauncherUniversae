@@ -14,13 +14,13 @@ import javax.swing.JLabel;
  *
  * @author Usuario
  */
-public class GameController extends javax.swing.JPanel {
+public class HemorragiaView extends javax.swing.JPanel {
     
     private ArrayList<ImageIcon> imagenes;
     private int indice;
     
     
-    public GameController() {
+    public HemorragiaView() {
         
         initComponents();
         cargaImagenes();       

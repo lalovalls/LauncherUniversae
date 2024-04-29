@@ -14,13 +14,13 @@ import javax.swing.JLabel;
  *
  * @author Usuario
  */
-public class GameController extends javax.swing.JPanel {
+public class HelicopteroView extends javax.swing.JPanel {
     
     private ArrayList<ImageIcon> imagenes;
     private int indice;
     
     
-    public GameController() {
+    public HelicopteroView() {
         
         initComponents();
         cargaImagenes();       
