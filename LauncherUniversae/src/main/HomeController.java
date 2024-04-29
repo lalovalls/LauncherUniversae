@@ -156,7 +156,10 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button5MouseEntered
 
     private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
-
+        AscensorView ascensorView = new AscensorView();
+        ascensorView.setSize(1540, 870);
+        ascensorView.setLocation(0, 0);
+        parent.PaintHomeController(ascensorView);
     }//GEN-LAST:event_Button5MouseClicked
 
     private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
@@ -170,7 +173,10 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button4MouseEntered
 
     private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
-
+        HelicopteroView helicopteroView = new HelicopteroView();
+        helicopteroView.setSize(1540, 870);
+        helicopteroView.setLocation(0, 0);
+        parent.PaintHomeController(helicopteroView);
     }//GEN-LAST:event_Button4MouseClicked
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
@@ -184,7 +190,10 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button3MouseEntered
 
     private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
-
+        EpisView episView = new EpisView();
+        episView.setSize(1540, 870);
+        episView.setLocation(0, 0);
+        parent.PaintHomeController(episView);
     }//GEN-LAST:event_Button3MouseClicked
 
     private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
@@ -198,7 +207,10 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button2MouseEntered
 
     private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
-
+        ExtincionView extincionView = new ExtincionView();
+        extincionView.setSize(1540, 870);
+        extincionView.setLocation(0, 0);
+        parent.PaintHomeController(extincionView);
     }//GEN-LAST:event_Button2MouseClicked
 
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
@@ -212,7 +224,10 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button1MouseEntered
 
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
-
+        HemorragiaView hemorragiaView = new HemorragiaView();
+        hemorragiaView.setSize(1540, 870);
+        hemorragiaView.setLocation(0, 0);
+        parent.PaintHomeController(hemorragiaView);
     }//GEN-LAST:event_Button1MouseClicked
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
