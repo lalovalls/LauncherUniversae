@@ -62,7 +62,6 @@ public class LauncherBase extends javax.swing.JFrame {
     private void initComponents() {
 
         bg = new javax.swing.JPanel();
-        Escudo8 = new javax.swing.JLabel();
         Escudo0 = new javax.swing.JLabel();
         Escudo1 = new javax.swing.JLabel();
         Escudo2 = new javax.swing.JLabel();
@@ -71,6 +70,7 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo5 = new javax.swing.JLabel();
         Escudo6 = new javax.swing.JLabel();
         Escudo7 = new javax.swing.JLabel();
+        Escudo8 = new javax.swing.JLabel();
         Escudo13 = new javax.swing.JLabel();
         Escudo9 = new javax.swing.JLabel();
         Escudo10 = new javax.swing.JLabel();
@@ -83,30 +83,6 @@ public class LauncherBase extends javax.swing.JFrame {
         setResizable(false);
 
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Escudo8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Escudo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LauncherButton8.png"))); // NOI18N
-        Escudo8.setBorder(new javax.swing.border.MatteBorder(null));
-        Escudo8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Escudo8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Escudo8.setMaximumSize(new java.awt.Dimension(103, 111));
-        Escudo8.setMinimumSize(new java.awt.Dimension(103, 111));
-        Escudo8.setName(""); // NOI18N
-        Escudo8.setPreferredSize(new java.awt.Dimension(103, 111));
-        Escudo8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                Escudo8MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                Escudo8MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                Escudo8MouseExited(evt);
-            }
-        });
-        bg.add(Escudo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
-        Escudo8.getAccessibleContext().setAccessibleName("");
-        Escudo8.getAccessibleContext().setAccessibleDescription("");
 
         Escudo0.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Escudo0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LauncherButton0.png"))); // NOI18N
@@ -138,6 +114,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo1.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo1.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo1MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo1MouseEntered(evt);
             }
@@ -156,6 +135,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo2.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo2.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo2MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo2MouseEntered(evt);
             }
@@ -174,6 +156,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo3.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo3.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo3MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo3MouseEntered(evt);
             }
@@ -192,6 +177,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo4.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo4.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo4MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo4MouseEntered(evt);
             }
@@ -210,6 +198,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo5.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo5.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo5MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo5MouseEntered(evt);
             }
@@ -228,6 +219,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo6.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo6.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo6MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo6MouseEntered(evt);
             }
@@ -246,6 +240,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo7.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo7.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo7MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo7MouseEntered(evt);
             }
@@ -254,6 +251,30 @@ public class LauncherBase extends javax.swing.JFrame {
             }
         });
         bg.add(Escudo7, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 80, -1, -1));
+
+        Escudo8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Escudo8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LauncherButton8.png"))); // NOI18N
+        Escudo8.setBorder(new javax.swing.border.MatteBorder(null));
+        Escudo8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Escudo8.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Escudo8.setMaximumSize(new java.awt.Dimension(103, 111));
+        Escudo8.setMinimumSize(new java.awt.Dimension(103, 111));
+        Escudo8.setName(""); // NOI18N
+        Escudo8.setPreferredSize(new java.awt.Dimension(103, 111));
+        Escudo8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo8MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                Escudo8MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                Escudo8MouseExited(evt);
+            }
+        });
+        bg.add(Escudo8, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 80, -1, -1));
+        Escudo8.getAccessibleContext().setAccessibleName("");
+        Escudo8.getAccessibleContext().setAccessibleDescription("");
 
         Escudo13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Escudo13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/LauncherButton13.png"))); // NOI18N
@@ -264,6 +285,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo13.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo13.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo13MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo13MouseEntered(evt);
             }
@@ -282,6 +306,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo9.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo9.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo9MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo9MouseEntered(evt);
             }
@@ -300,6 +327,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo10.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo10.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo10MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo10MouseEntered(evt);
             }
@@ -318,6 +348,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo11.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo11MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo11MouseEntered(evt);
             }
@@ -336,6 +369,9 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo12.setMinimumSize(new java.awt.Dimension(103, 111));
         Escudo12.setPreferredSize(new java.awt.Dimension(103, 111));
         Escudo12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Escudo12MouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 Escudo12MouseEntered(evt);
             }
@@ -512,12 +548,15 @@ public class LauncherBase extends javax.swing.JFrame {
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
        Escudo8.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(0);
+       HomeController home = CreateHomeController(8);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo8MouseClicked
 
     private void Escudo0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseClicked
-
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(0);
+       PaintHomeController(home);           
     }//GEN-LAST:event_Escudo0MouseClicked
 
     private void Escudo8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseEntered
@@ -529,6 +568,90 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo8.setSize(103, 111);
         SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
     }//GEN-LAST:event_Escudo8MouseExited
+
+    private void Escudo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo1MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(1);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo1MouseClicked
+
+    private void Escudo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo2MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(2);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo2MouseClicked
+
+    private void Escudo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo3MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(3);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo3MouseClicked
+
+    private void Escudo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(4);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo4MouseClicked
+
+    private void Escudo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(5);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo5MouseClicked
+
+    private void Escudo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(6);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo6MouseClicked
+
+    private void Escudo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(7);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo7MouseClicked
+
+    private void Escudo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(13);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo13MouseClicked
+
+    private void Escudo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(9);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo9MouseClicked
+
+    private void Escudo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(10);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo10MouseClicked
+
+    private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(11);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo11MouseClicked
+
+    private void Escudo12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseClicked
+       Escudo8.setSize(113, 121);
+       SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
+       HomeController home = CreateHomeController(12);
+       PaintHomeController(home);
+    }//GEN-LAST:event_Escudo12MouseClicked
 
     /**
      * @param args the command line arguments
