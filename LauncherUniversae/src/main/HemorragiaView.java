@@ -43,7 +43,7 @@ public class HemorragiaView extends javax.swing.JPanel {
     private void mostrarImagen() {
         ImageIcon currentImage = imagenes.get(indice);
         ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Embarque" + indice +".png");        
+        setImageLabel(ImagenFondo, "src/imagenes/Hemorragia" + indice +".png");        
         actualizarPuntos();
         
     }
@@ -127,7 +127,7 @@ public class HemorragiaView extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Hemorragia0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 
