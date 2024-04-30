@@ -53,5 +53,26 @@ public class Utils {
             return "Error al leer el archivo JSON";
         }
     }
+    
+        public static String getNombreSimulador(int indexGrado) {
+        try {
+            JSONObject jsonObject = readJsonFromFile();
+            JSONArray grados = jsonObject.getJSONArray("grados");
+            if (indexGrado >= 0 && indexGrado < grados.length()) {
+                JSONObject simulador = grados.getJSONObject(indexGrado).getJSONObject("simulador");
+                return simulador.getString("nombre");
+            } else {
+                return "Índice de grado fuera de los límites";
+            }
+        } catch (JSONException e) {
+            return "Error al obtener el nombre del simulador: " + e.getMessage();
+        }
+    }
+
+    private static JSONObject readJsonFromFile() {
+
+        return null;
+
+    }
 }
 
