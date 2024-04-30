@@ -64,6 +64,66 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
             return "Error al leer el archivo JSON";
         }
     }
+        public static String Imagenes(int indexGrado, int indexJuegos) throws FileNotFoundException {
+        try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
+            StringBuilder jsonData = new StringBuilder();
+            String line;
+            while ((line = br.readLine()) != null) {
+                jsonData.append(line);
+            }
+
+            JSONObject grados = new JSONObject(jsonData.toString())
+                    .getJSONArray("grados")
+                    .getJSONObject(indexGrado)
+                    .getJSONArray("juegos")
+                    .getJSONObject(indexJuegos);
+
+            return grados.getString("imagenes");
+
+        } catch (IOException | JSONException e) {
+            return "Error al leer el archivo JSON";
+        }
+    }
+            public static String Ruta(int indexGrado, int indexJuegos) throws FileNotFoundException {
+        try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
+            StringBuilder jsonData = new StringBuilder();
+            String line;
+            while ((line = br.readLine()) != null) {
+                jsonData.append(line);
+            }
+
+            JSONObject grados = new JSONObject(jsonData.toString())
+                    .getJSONArray("grados")
+                    .getJSONObject(indexGrado)
+                    .getJSONArray("juegos")
+                    .getJSONObject(indexJuegos);
+
+            return grados.getString("ruta");
+
+        } catch (IOException | JSONException e) {
+            return "Error al leer el archivo JSON";
+        }
+    }
+                public static String Descripcion(int indexGrado, int indexJuegos) throws FileNotFoundException {
+        try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
+            StringBuilder jsonData = new StringBuilder();
+            String line;
+            while ((line = br.readLine()) != null) {
+                jsonData.append(line);
+            }
+
+            JSONObject grados = new JSONObject(jsonData.toString())
+                    .getJSONArray("grados")
+                    .getJSONObject(indexGrado)
+                    .getJSONArray("juegos")
+                    .getJSONObject(indexJuegos);
+
+            return grados.getString("descripcion");
+
+        } catch (IOException | JSONException e) {
+            return "Error al leer el archivo JSON";
+        }
+    }
    
 }
 

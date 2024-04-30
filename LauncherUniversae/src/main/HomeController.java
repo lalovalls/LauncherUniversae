@@ -232,6 +232,10 @@ public class HomeController extends javax.swing.JPanel {
             HemorragiaView hemorragiaView = new HemorragiaView();
             hemorragiaView.setSize(1540, 870);
             hemorragiaView.setLocation(0, 0);
+            
+            hemorragiaView.juegoDescripcion = Utils.Descripcion(0, 0);
+            
+            
             String tituloDelJuego = Utils.TituloJuegos(0, 1);
             hemorragiaView.setJuegoTitulo(tituloDelJuego);
             parent.PaintHomeController(hemorragiaView);
