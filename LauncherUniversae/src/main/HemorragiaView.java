@@ -25,11 +25,11 @@ public class HemorragiaView extends javax.swing.JPanel {
         
         initComponents();
         cargaImagenes(); 
-        this.TituloDeTexto = TituloDeTexto;
+        TituloDeTexto = TituloDeTexto;
                      
     }
            public void setJuegoTitulo(String nuevoTitulo) {
-        this.juegoTitulo = nuevoTitulo; 
+            juegoTitulo = nuevoTitulo; 
             TituloDeTexto.setText(nuevoTitulo); 
         
     }

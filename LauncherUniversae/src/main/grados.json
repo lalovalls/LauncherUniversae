@@ -9,13 +9,13 @@
         
      [
           {
-            "titulo": "Embarque y desembarque de un helicoptero 1",
+            "titulo": "Embarque y desembarque de un helicoptero",
             "imagenes": ["Embarque"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
-            "titulo": " ante una hemorragia externa ",
+            "titulo": " Protocolo ante una hemorragia externa",
             "imagenes": ["Hemorragia"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
@@ -27,7 +27,7 @@
             "descripcion": "<html>lorem</html>"
           },
           {
-            "titulo": "Tipologia y caracteristicas de los EPIS",
+            "titulo": "Tipologia y caracteristicas de los EPIS 52",
             "imagenes": ["EPIS"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"

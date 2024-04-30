@@ -18,14 +18,21 @@ public class EpisView extends javax.swing.JPanel {
     
     private ArrayList<ImageIcon> imagenes;
     private int indice;
-    
+    public String juegoTitulo = "juegoTitulo";
     
     public EpisView() {
         
         initComponents();
         cargaImagenes();       
+        TituloDeTexto = TituloDeTexto;
                      
     }
+           public void setJuegoTitulo(String nuevoTitulo) {
+            juegoTitulo = nuevoTitulo; 
+            TituloDeTexto.setText(nuevoTitulo); 
+        
+    }             
+    
 
     
     private void cargaImagenes() {

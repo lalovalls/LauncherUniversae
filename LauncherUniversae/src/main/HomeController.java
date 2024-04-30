@@ -159,10 +159,17 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button5MouseEntered
 
     private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
-        AscensorView ascensorView = new AscensorView();
-        ascensorView.setSize(1540, 870);
-        ascensorView.setLocation(0, 0);
-        parent.PaintHomeController(ascensorView);
+        try {
+            
+            AscensorView ascensorView = new AscensorView();
+            ascensorView.setSize(1540, 870);
+            ascensorView.setLocation(0, 0);
+            String tituloDelJuego = Utils.TituloJuegos(0, 5);
+            ascensorView.setJuegoTitulo(tituloDelJuego);
+            parent.PaintHomeController(ascensorView);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Button5MouseClicked
 
     private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
@@ -176,10 +183,17 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button4MouseEntered
 
     private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
-        HelicopteroView helicopteroView = new HelicopteroView();
-        helicopteroView.setSize(1540, 870);
-        helicopteroView.setLocation(0, 0);
-        parent.PaintHomeController(helicopteroView);
+        try {
+            
+            HelicopteroView helicopteroView = new HelicopteroView();
+            helicopteroView.setSize(1540, 870);
+            helicopteroView.setLocation(0, 0);
+            String tituloDelJuego = Utils.TituloJuegos(0, 4);
+            helicopteroView.setJuegoTitulo(tituloDelJuego);
+            parent.PaintHomeController(helicopteroView);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Button4MouseClicked
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
@@ -193,10 +207,17 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button3MouseEntered
 
     private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
-        EpisView episView = new EpisView();
-        episView.setSize(1540, 870);
-        episView.setLocation(0, 0);
-        parent.PaintHomeController(episView);
+        try {
+            
+            EpisView episView = new EpisView();
+            episView.setSize(1540, 870);
+            episView.setLocation(0, 0);
+            String tituloDelJuego = Utils.TituloJuegos(0, 3);
+            episView.setJuegoTitulo(tituloDelJuego);
+            parent.PaintHomeController(episView);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Button3MouseClicked
 
     private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
@@ -210,10 +231,17 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button2MouseEntered
 
     private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
-        ExtincionView extincionView = new ExtincionView();
-        extincionView.setSize(1540, 870);
-        extincionView.setLocation(0, 0);
-        parent.PaintHomeController(extincionView);
+       try {
+            
+            ExtincionView extincionView = new ExtincionView();
+            extincionView.setSize(1540, 870);
+            extincionView.setLocation(0, 0);
+            String tituloDelJuego = Utils.TituloJuegos(0, 2);
+            extincionView.setJuegoTitulo(tituloDelJuego);
+            parent.PaintHomeController(extincionView);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Button2MouseClicked
 
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
