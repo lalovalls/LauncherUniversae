@@ -23,7 +23,7 @@ import java.io.IOException;
 
 public class Utils {
 
-    private static final String JSON_FILE_PATH = "src/grados.json";
+private static final String JSON_FILE_PATH = "src/main/grados.json";
 
     public static String NombreGrado(int indexGrado) throws FileNotFoundException {
         try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
@@ -33,46 +33,37 @@ public class Utils {
                 jsonData.append(line);
             }
 
-            // Convertir el JSON en un objeto JSONObject
-            JSONObject jsonObject = new JSONObject(jsonData.toString());
+            JSONObject grados = new JSONObject (jsonData.toString())
+                    .getJSONArray("grados")
+                    .getJSONObject(indexGrado);
+            
+            return grados.getString("nombres");
 
-            // Obtener el JSONArray de los grados
-            JSONArray grados = jsonObject.getJSONArray("grados");
 
-            // Verificar si el índice del grado está dentro del rango
-            if (indexGrado >= 0 && indexGrado < grados.length()) {
-                // Obtener el objeto JSONObject del grado en el índice especificado
-                JSONObject grado = grados.getJSONObject(indexGrado);
-
-                // Obtener el nombre del grado
-                return grado.getString("nombres");
-            } else {
-                return "Índice de grado fuera de rango";
-            }
         } catch (IOException | JSONException e) {
             return "Error al leer el archivo JSON";
         }
     }
-    
-        public static String getNombreSimulador(int indexGrado) {
-        try {
-            JSONObject jsonObject = readJsonFromFile();
-            JSONArray grados = jsonObject.getJSONArray("grados");
-            if (indexGrado >= 0 && indexGrado < grados.length()) {
-                JSONObject simulador = grados.getJSONObject(indexGrado).getJSONObject("simulador");
-                return simulador.getString("nombre");
-            } else {
-                return "Índice de grado fuera de los límites";
+    public static String TituloJuegos(int indexGrado, int indexJuegos) throws FileNotFoundException {
+        try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
+            StringBuilder jsonData = new StringBuilder();
+            String line;
+            while ((line = br.readLine()) != null) {
+                jsonData.append(line);
             }
-        } catch (JSONException e) {
-            return "Error al obtener el nombre del simulador: " + e.getMessage();
+
+            JSONObject grados = new JSONObject(jsonData.toString())
+                    .getJSONArray("grados")
+                    .getJSONObject(indexGrado)
+                    .getJSONArray("juegos")
+                    .getJSONObject(indexJuegos);
+
+            return grados.getString("titulo");
+
+        } catch (IOException | JSONException e) {
+            return "Error al leer el archivo JSON";
         }
     }
-
-    private static JSONObject readJsonFromFile() {
-
-        return null;
-
-    }
+   
 }
 

@@ -5,7 +5,10 @@
 package main;
 
 import java.awt.Image;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -20,12 +23,18 @@ public class GameController extends javax.swing.JPanel {
     private int indice;
     
     public String juegoTitulo = "juegoTitulo";
-            
+             
     public GameController() {
         
-        initComponents();
-        cargaImagenes();       
-                     
+            initComponents();
+            cargaImagenes(); 
+            this.TituloDeTexto = TituloDeTexto;
+    }
+    
+       public void setJuegoTitulo(String nuevoTitulo) {
+        this.juegoTitulo = nuevoTitulo; 
+            TituloDeTexto.setText(nuevoTitulo); 
+        
     }
 
     
@@ -248,4 +257,8 @@ public class GameController extends javax.swing.JPanel {
     private javax.swing.JLabel TituloDeTexto;
     private javax.swing.JPanel bg;
     // End of variables declaration//GEN-END:variables
+
+    void juegoTitulo(String TituloJuegos) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

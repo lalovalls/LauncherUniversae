@@ -5,6 +5,9 @@
 package main;
 
 import java.awt.Image;
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -225,10 +228,18 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
 
-        HemorragiaView hemorragiaView = new HemorragiaView();
-        hemorragiaView.setSize(1540, 870);
-        hemorragiaView.setLocation(0, 0);
-        parent.PaintHomeController(hemorragiaView);
+        try {
+            HemorragiaView hemorragiaView = new HemorragiaView();
+            hemorragiaView.setSize(1540, 870);
+            hemorragiaView.setLocation(0, 0);
+            String tituloDelJuego = Utils.TituloJuegos(0, 1);
+            hemorragiaView.setJuegoTitulo(tituloDelJuego);
+            parent.PaintHomeController(hemorragiaView);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
 
     }//GEN-LAST:event_Button1MouseClicked
 
@@ -245,11 +256,16 @@ public class HomeController extends javax.swing.JPanel {
     }//GEN-LAST:event_Button0MouseEntered
 
     private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
-        GameController gameController = new GameController();
-        gameController.setSize(1540, 870);
-        gameController.setLocation(0, 0);
-        gameController.juegoTitulo = Utils.getNombreSimulador(0);
-        parent.PaintHomeController(gameController);       
+        try {
+            GameController gameController = new GameController();
+            gameController.setSize(1540, 870);
+            gameController.setLocation(0, 0);
+            String tituloDelJuego = Utils.TituloJuegos(0, 0);
+            gameController.setJuegoTitulo(tituloDelJuego);
+            parent.PaintHomeController(gameController);
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);

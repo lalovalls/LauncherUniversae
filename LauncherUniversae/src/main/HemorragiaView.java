@@ -18,13 +18,20 @@ public class HemorragiaView extends javax.swing.JPanel {
     
     private ArrayList<ImageIcon> imagenes;
     private int indice;
+        public String juegoTitulo = "juegoTitulo";
     
     
     public HemorragiaView() {
         
         initComponents();
-        cargaImagenes();       
+        cargaImagenes(); 
+        this.TituloDeTexto = TituloDeTexto;
                      
+    }
+           public void setJuegoTitulo(String nuevoTitulo) {
+        this.juegoTitulo = nuevoTitulo; 
+            TituloDeTexto.setText(nuevoTitulo); 
+        
     }
 
     
