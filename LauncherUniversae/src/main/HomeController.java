@@ -248,6 +248,7 @@ public class HomeController extends javax.swing.JPanel {
         GameController gameController = new GameController();
         gameController.setSize(1540, 870);
         gameController.setLocation(0, 0);
+        gameController.juegoTitulo = Utils.getNombreSimulador(0);
         parent.PaintHomeController(gameController);       
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName, String root){

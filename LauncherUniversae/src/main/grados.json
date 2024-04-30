@@ -9,38 +9,38 @@
         
      [
           {
-            "titulo": "Embarque y desembarque de un helicoptero",
-            "imagenes": [""],
+            "titulo": "Embarque y desembarque de un helicoptero 1",
+            "imagenes": ["Embarque"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Protocolo ante una hemorragia externa ",
-            "imagenes": [""],
+            "imagenes": ["Hemorragia"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Maniobras de extincion segun la instalacion",
-            "imagenes": [""],
+            "imagenes": ["Extincion"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Tipologia y caracteristicas de los EPIS",
-            "imagenes": [""],
+            "imagenes": ["EPIS"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Señalizacion a helicoptero desde tierra",
-            "imagenes": [""],
+            "imagenes": ["Helicoptero"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Rescate en ascensor",
-            "imagenes": [""],
+            "imagenes": ["Ascensor"],
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           }

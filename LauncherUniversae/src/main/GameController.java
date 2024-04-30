@@ -19,7 +19,8 @@ public class GameController extends javax.swing.JPanel {
     private ArrayList<ImageIcon> imagenes;
     private int indice;
     
-    
+    public String juegoTitulo = "juegoTitulo";
+            
     public GameController() {
         
         initComponents();
