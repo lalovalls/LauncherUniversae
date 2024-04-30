@@ -18,15 +18,20 @@ public class ExtincionView extends javax.swing.JPanel {
     
     private ArrayList<ImageIcon> imagenes;
     private int indice;
+    public String juegoTitulo = "juegoTitulo";
     
     
     public ExtincionView() {
         
         initComponents();
         cargaImagenes();       
-                     
+        TituloDeTexto = TituloDeTexto;             
     }
-
+    public void setJuegoTitulo(String nuevoTitulo) {
+            juegoTitulo = nuevoTitulo; 
+            TituloDeTexto.setText(nuevoTitulo); 
+        
+    }
     
     private void cargaImagenes() {
         
