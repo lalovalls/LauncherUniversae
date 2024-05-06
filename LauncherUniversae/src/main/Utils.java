@@ -126,6 +126,6 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
             return "Error al leer el archivo JSON";
         }
     }
-   
+                
 }
 
