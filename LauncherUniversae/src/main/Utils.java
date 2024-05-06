@@ -64,7 +64,7 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
             return "Error al leer el archivo JSON";
         }
     }
-        public static String Imagenes(int indexGrado, int indexJuegos) throws FileNotFoundException {
+        public static String Imagenes(int indexGrado, int indexJuegos, int indexImagen) throws FileNotFoundException {
         try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
             StringBuilder jsonData = new StringBuilder();
             String line;
@@ -76,7 +76,9 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
                     .getJSONArray("grados")
                     .getJSONObject(indexGrado)
                     .getJSONArray("juegos")
-                    .getJSONObject(indexJuegos);
+                    .getJSONObject(indexJuegos)
+                    .getJSONArray("imagenes")
+                    .getJSONObject(indexImagen);
 
             return grados.getString("imagenes");
 
