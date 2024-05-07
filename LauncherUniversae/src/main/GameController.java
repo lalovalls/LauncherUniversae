@@ -21,7 +21,6 @@ public class GameController extends javax.swing.JPanel {
     
     public ArrayList<String> imagenes;
     public int indice;
-    
     public String juegoTitulo = "juegoTitulo";
              
     public GameController() throws FileNotFoundException {
@@ -47,10 +46,8 @@ public class GameController extends javax.swing.JPanel {
             for (int i = 0; i<5 ; i++) {
                 String index = Integer.toString(i);
                 String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
-                System.out.println(rutaImagen);
                 imagenes.add(rutaImagen);
             }
-            System.out.println(imagenes);
  
     }
 
@@ -58,7 +55,6 @@ public class GameController extends javax.swing.JPanel {
 
     private void mostrarImagen() {
   
-       // ImageIcon currentImage =  new ImageIcon(imagenes.get(indice));
         setImageLabel(ImagenFondo, imagenes.get(indice));
         actualizarPuntos();
     }

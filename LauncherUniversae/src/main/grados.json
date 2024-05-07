@@ -16,7 +16,7 @@
           },
           {
             "titulo": " Protocolo ante una hemorragia externa",
-            "imagenes": ["Hemorragia"],
+            "imagenes": "Hemorragia",
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
