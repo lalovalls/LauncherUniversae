@@ -20,19 +20,27 @@ public class AscensorView extends javax.swing.JPanel {
     public ArrayList<String> imagenes;
     public int indice;
     public String juegoTitulo = "juegoTitulo";
+    public String Descripcion = "Descripcion";
     
     public AscensorView() throws FileNotFoundException {
         
             initComponents();
             imagenes = new ArrayList<String>();
             cargaImagenes(); 
-            TituloDeTexto = TituloDeTexto;             
+            TituloDeTexto = TituloDeTexto;
+            Descripcion = Descripcion;
     }
     
     public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
-            TituloDeTexto.setText(nuevoTitulo); 
-        
+            TituloDeTexto.setText(nuevoTitulo);
+            
+    }            
+    
+     public void setDescripcion(String nuevaDescripcion) {
+            Descripcion = nuevaDescripcion; 
+            Texto.setText(nuevaDescripcion); 
+             
     }
     
     private void cargaImagenes() throws FileNotFoundException {
