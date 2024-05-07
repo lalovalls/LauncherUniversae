@@ -10,8 +10,8 @@
      [
           {
             "titulo": "Embarque y desembarque de un helicoptero",
-            "imagenes": ["Embarque"],
-            "ruta": "",
+            "imagenes": "Embarque",
+            "ruta": "ruta del video juego",
             "descripcion": "<html>lorem</html>"
           },
           {

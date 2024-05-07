@@ -19,14 +19,15 @@ import javax.swing.JLabel;
  */
 public class GameController extends javax.swing.JPanel {
     
-    private ArrayList<ImageIcon> imagenes;
-    private int indice;
+    public ArrayList<String> imagenes;
+    public int indice;
     
     public String juegoTitulo = "juegoTitulo";
              
-    public GameController() {
+    public GameController() throws FileNotFoundException {
         
             initComponents();
+            imagenes = new ArrayList<String>();
             cargaImagenes(); 
             TituloDeTexto = TituloDeTexto;
     }
@@ -38,24 +39,28 @@ public class GameController extends javax.swing.JPanel {
     }
 
     
-    private void cargaImagenes() {
-        
-        imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Embarque4.png")));
-        
-        
+    private void cargaImagenes() throws FileNotFoundException {
+       
+            String nombreCarpeta = Utils.Imagenes(0, 0);
+            String carpeta = "src/" + nombreCarpeta + "/";
+            
+            for (int i = 0; i<5 ; i++) {
+                String index = Integer.toString(i);
+                String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
+                System.out.println(rutaImagen);
+                imagenes.add(rutaImagen);
+            }
+            System.out.println(imagenes);
+ 
     }
 
+
+
     private void mostrarImagen() {
-        ImageIcon currentImage = imagenes.get(indice);
-        ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Embarque" + indice +".png");        
+  
+       // ImageIcon currentImage =  new ImageIcon(imagenes.get(indice));
+        setImageLabel(ImagenFondo, imagenes.get(indice));
         actualizarPuntos();
-        
     }
 
     private void showPreviousImage() {
@@ -137,7 +142,7 @@ public class GameController extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Embarque0.png"))); // NOI18N
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Embarque/Embarque0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 
@@ -259,6 +264,10 @@ public class GameController extends javax.swing.JPanel {
     // End of variables declaration//GEN-END:variables
 
     void juegoTitulo(String TituloJuegos) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    private void setImageLabel(JLabel ImagenFondo, ImageIcon currentImage) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }

@@ -20,6 +20,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class Utils {
 
@@ -64,7 +65,7 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
             return "Error al leer el archivo JSON";
         }
     }
-        public static String Imagenes(int indexGrado, int indexJuegos, int indexImagen) throws FileNotFoundException {
+public static String Imagenes(int indexGrado, int indexJuegos) throws FileNotFoundException {
         try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
             StringBuilder jsonData = new StringBuilder();
             String line;
@@ -76,16 +77,15 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
                     .getJSONArray("grados")
                     .getJSONObject(indexGrado)
                     .getJSONArray("juegos")
-                    .getJSONObject(indexJuegos)
-                    .getJSONArray("imagenes")
-                    .getJSONObject(indexImagen);
+                    .getJSONObject(indexJuegos);
 
             return grados.getString("imagenes");
 
         } catch (IOException | JSONException e) {
             return "Error al leer el archivo JSON";
-        }
     }
+}
+
             public static String Ruta(int indexGrado, int indexJuegos) throws FileNotFoundException {
         try (BufferedReader br = new BufferedReader(new FileReader(JSON_FILE_PATH))) {
             StringBuilder jsonData = new StringBuilder();
@@ -126,6 +126,14 @@ private static final String JSON_FILE_PATH = "src/main/grados.json";
             return "Error al leer el archivo JSON";
         }
     }
+    public static ArrayList<String> CrearListaStrings(String root, String fileName, String fileFormat, int size){
+         ArrayList<String> ListaTemp = new ArrayList<>();
+         for(int i = 0; i < size; i++)
+         {
+             ListaTemp.add(root + fileName + i + fileFormat);
+         }
+         return ListaTemp;
+     }             
                 
 }
 
