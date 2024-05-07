@@ -262,6 +262,8 @@ public class HomeController extends javax.swing.JPanel {
             hemorragiaView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 1);
             hemorragiaView.setJuegoTitulo(tituloDelJuego);
+            String juegoDescripcion = Utils.Descripcion(0, 1);
+            hemorragiaView.setJuegoDescripcion(juegoDescripcion);
             parent.PaintHomeController(hemorragiaView);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
@@ -290,6 +292,8 @@ public class HomeController extends javax.swing.JPanel {
             gameController.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 0);
             gameController.setJuegoTitulo(tituloDelJuego);
+            String juegoDescripcion = Utils.Descripcion(0, 0);
+            gameController.setJuegoDescripcion(juegoDescripcion);
             parent.PaintHomeController(gameController);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);

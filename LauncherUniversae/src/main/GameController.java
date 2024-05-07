@@ -22,6 +22,7 @@ public class GameController extends javax.swing.JPanel {
     public ArrayList<String> imagenes;
     public int indice;
     public String juegoTitulo = "juegoTitulo";
+    public String juegoDescripcion = "juegoDescripcion";
              
     public GameController() throws FileNotFoundException {
         
@@ -29,11 +30,17 @@ public class GameController extends javax.swing.JPanel {
             imagenes = new ArrayList<String>();
             cargaImagenes(); 
             TituloDeTexto = TituloDeTexto;
+            Texto = Texto;
     }
     
        public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
             TituloDeTexto.setText(nuevoTitulo); 
+        
+    }
+            public void setJuegoDescripcion(String nuevaDescripcion) {
+            juegoDescripcion = nuevaDescripcion; 
+            Texto.setText(nuevaDescripcion); 
         
     }
 

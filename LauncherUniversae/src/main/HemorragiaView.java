@@ -20,6 +20,7 @@ public class HemorragiaView extends javax.swing.JPanel {
     public ArrayList<String> imagenes;
     public int indice;
     public String juegoTitulo = "juegoTitulo";
+    public String juegoDescripcion = "juegoDescripcion";
     
     
     public HemorragiaView() throws FileNotFoundException {
@@ -28,12 +29,18 @@ public class HemorragiaView extends javax.swing.JPanel {
         imagenes = new ArrayList<String>();
         cargaImagenes(); 
         TituloDeTexto.setText(juegoTitulo);
+        Texto = Texto;
 
                      
     }
            public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
             TituloDeTexto.setText(nuevoTitulo); 
+        
+    }
+           public void setJuegoDescripcion(String nuevaDescripcion) {
+            juegoDescripcion = nuevaDescripcion; 
+            Texto.setText(nuevaDescripcion); 
         
     }
 
