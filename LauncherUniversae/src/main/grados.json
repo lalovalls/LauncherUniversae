@@ -22,13 +22,13 @@
           },
           {
             "titulo": "Maniobras de extincion segun la instalacion",
-            "imagenes": ["Extincion"],
+            "imagenes": "Extincion",
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Tipologia y caracteristicas de los EPIS",
-            "imagenes": ["EPIS"],
+            "imagenes": "EPIS",
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },

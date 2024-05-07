@@ -5,6 +5,7 @@
 package main;
 
 import java.awt.Image;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -16,41 +17,40 @@ import javax.swing.JLabel;
  */
 public class EpisView extends javax.swing.JPanel {
     
-    private ArrayList<ImageIcon> imagenes;
-    private int indice;
+    public ArrayList<String> imagenes;
+    public int indice;
     public String juegoTitulo = "juegoTitulo";
     
-    public EpisView() {
+    
+    public EpisView() throws FileNotFoundException {
         
         initComponents();
+        imagenes = new ArrayList<String>();
         cargaImagenes();       
-        TituloDeTexto = TituloDeTexto;
-                     
+        TituloDeTexto.setText(juegoTitulo);             
     }
-           public void setJuegoTitulo(String nuevoTitulo) {
+    public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
             TituloDeTexto.setText(nuevoTitulo); 
         
-    }             
+    }
     
-
-    
-    private void cargaImagenes() {
-        
-        imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/EPIS4.png")));
-        
-        
+     private void cargaImagenes() throws FileNotFoundException {
+       
+            String nombreCarpeta = Utils.Imagenes(0, 3);
+            String carpeta = "src/" + nombreCarpeta + "/";
+            
+            for (int i = 0; i<5 ; i++) {
+                String index = Integer.toString(i);
+                String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
+                imagenes.add(rutaImagen);
+            }
+            System.out.println(imagenes);
     }
 
     private void mostrarImagen() {
-        ImageIcon currentImage = imagenes.get(indice);
-        ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/EPIS" + indice +".png");        
+
+        setImageLabel(ImagenFondo, imagenes.get(indice) );        
         actualizarPuntos();
         
     }
@@ -134,7 +134,7 @@ public class EpisView extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/EPIS0.png"))); // NOI18N
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Epis/EPIS0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 

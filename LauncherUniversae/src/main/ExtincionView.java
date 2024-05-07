@@ -5,6 +5,7 @@
 package main;
 
 import java.awt.Image;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -16,16 +17,17 @@ import javax.swing.JLabel;
  */
 public class ExtincionView extends javax.swing.JPanel {
     
-    private ArrayList<ImageIcon> imagenes;
-    private int indice;
+    public ArrayList<String> imagenes;
+    public int indice;
     public String juegoTitulo = "juegoTitulo";
     
     
-    public ExtincionView() {
+    public ExtincionView() throws FileNotFoundException {
         
         initComponents();
+        imagenes = new ArrayList<String>();
         cargaImagenes();       
-        TituloDeTexto = TituloDeTexto;             
+        TituloDeTexto.setText(juegoTitulo);             
     }
     public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
@@ -33,22 +35,22 @@ public class ExtincionView extends javax.swing.JPanel {
         
     }
     
-    private void cargaImagenes() {
-        
-        imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Extincion4.png")));
-        
-        
+     private void cargaImagenes() throws FileNotFoundException {
+       
+            String nombreCarpeta = Utils.Imagenes(0, 2);
+            String carpeta = "src/" + nombreCarpeta + "/";
+            
+            for (int i = 0; i<5 ; i++) {
+                String index = Integer.toString(i);
+                String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
+                imagenes.add(rutaImagen);
+            }
+            System.out.println(imagenes);
     }
 
     private void mostrarImagen() {
-        ImageIcon currentImage = imagenes.get(indice);
-        ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Extincion" + indice +".png");        
+
+        setImageLabel(ImagenFondo, imagenes.get(indice) );        
         actualizarPuntos();
         
     }
@@ -132,7 +134,7 @@ public class ExtincionView extends javax.swing.JPanel {
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Extincion0.png"))); // NOI18N
+        ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Extincion/Extincion0.png"))); // NOI18N
         ImagenFondo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         bg.add(ImagenFondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, -10, 891, 525));
 
