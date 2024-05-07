@@ -48,7 +48,6 @@ public class HemorragiaView extends javax.swing.JPanel {
                 String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
                 imagenes.add(rutaImagen);
             }
-            System.out.println(imagenes);
     }
 
     private void mostrarImagen() {

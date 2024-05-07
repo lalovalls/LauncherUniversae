@@ -45,7 +45,6 @@ public class AscensorView extends javax.swing.JPanel {
                 String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
                 imagenes.add(rutaImagen);
             }
- 
     }
 
     private void mostrarImagen() {
