@@ -218,6 +218,8 @@ public class HomeController extends javax.swing.JPanel {
             episView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 3);
             episView.setJuegoTitulo(tituloDelJuego);
+            String Descripcion = Utils.Descripcion(0, 3);
+            episView.setJuegoDescripcion(Descripcion);
             parent.PaintHomeController(episView);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
@@ -242,6 +244,8 @@ public class HomeController extends javax.swing.JPanel {
             extincionView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 2);
             extincionView.setJuegoTitulo(tituloDelJuego);
+            String Descripcion = Utils.Descripcion(0, 2);
+            extincionView.setJuegoDescripcion(Descripcion);
             parent.PaintHomeController(extincionView);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);

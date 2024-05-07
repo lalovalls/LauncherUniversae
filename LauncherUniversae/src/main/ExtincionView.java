@@ -20,21 +20,26 @@ public class ExtincionView extends javax.swing.JPanel {
     public ArrayList<String> imagenes;
     public int indice;
     public String juegoTitulo = "juegoTitulo";
-    
+    public String juegoDescripcion = "juegoDescripcion";
     
     public ExtincionView() throws FileNotFoundException {
         
         initComponents();
         imagenes = new ArrayList<String>();
         cargaImagenes();       
-        TituloDeTexto.setText(juegoTitulo);             
+        TituloDeTexto.setText(juegoTitulo);
+        Texto = Texto;
     }
     public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
             TituloDeTexto.setText(nuevoTitulo); 
         
     }
-    
+   public void setJuegoDescripcion(String nuevaDescripcion) {
+            juegoDescripcion = nuevaDescripcion; 
+            Texto.setText(nuevaDescripcion); 
+        
+    }
      private void cargaImagenes() throws FileNotFoundException {
        
             String nombreCarpeta = Utils.Imagenes(0, 2);

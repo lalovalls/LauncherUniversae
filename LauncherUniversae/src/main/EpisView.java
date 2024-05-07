@@ -20,6 +20,7 @@ public class EpisView extends javax.swing.JPanel {
     public ArrayList<String> imagenes;
     public int indice;
     public String juegoTitulo = "juegoTitulo";
+    public String juegoDescripcion = "juegoDescripcion";
     
     
     public EpisView() throws FileNotFoundException {
@@ -27,13 +28,19 @@ public class EpisView extends javax.swing.JPanel {
         initComponents();
         imagenes = new ArrayList<String>();
         cargaImagenes();       
-        TituloDeTexto.setText(juegoTitulo);             
+        TituloDeTexto.setText(juegoTitulo);  
+        Texto = Texto;
     }
     public void setJuegoTitulo(String nuevoTitulo) {
             juegoTitulo = nuevoTitulo; 
-            TituloDeTexto.setText(nuevoTitulo); 
+            TituloDeTexto.setText(nuevoTitulo);         
+    }
+    public void setJuegoDescripcion(String nuevaDescripcion) {
+            juegoDescripcion = nuevaDescripcion; 
+            Texto.setText(nuevaDescripcion); 
         
     }
+
     
      private void cargaImagenes() throws FileNotFoundException {
        
