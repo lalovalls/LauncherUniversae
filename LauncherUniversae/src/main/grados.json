@@ -34,13 +34,13 @@
           },
           {
             "titulo": "Señalizacion a helicoptero desde tierra",
-            "imagenes": ["Helicoptero"],
+            "imagenes": "Helicoptero",
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           },
           {
             "titulo": "Rescate en ascensor",
-            "imagenes": ["Ascensor"],
+            "imagenes": "Ascensor",
             "ruta": "",
             "descripcion": "<html>lorem</html>"
           }

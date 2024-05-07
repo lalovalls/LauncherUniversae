@@ -5,6 +5,7 @@
 package main;
 
 import java.awt.Image;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -16,16 +17,17 @@ import javax.swing.JLabel;
  */
 public class HelicopteroView extends javax.swing.JPanel {
     
-    private ArrayList<ImageIcon> imagenes;
-    private int indice;
+    public ArrayList<String> imagenes;
+    public int indice;
     public String juegoTitulo = "juegoTitulo";
     
     
-    public HelicopteroView() {
+    public HelicopteroView() throws FileNotFoundException {
         
-        initComponents();
-        cargaImagenes();       
-        TituloDeTexto = TituloDeTexto;             
+            initComponents();
+            imagenes = new ArrayList<String>();
+            cargaImagenes(); 
+            TituloDeTexto = TituloDeTexto;             
     }
 
      public void setJuegoTitulo(String nuevoTitulo) {
@@ -34,22 +36,22 @@ public class HelicopteroView extends javax.swing.JPanel {
         
     }
      
-    private void cargaImagenes() {
-        
-        imagenes = new ArrayList<>();                     
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero0.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero1.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero2.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero3.png")));
-        imagenes.add(new ImageIcon(getClass().getResource("/imagenes/Helicoptero4.png")));
-        
-        
+    private void cargaImagenes() throws FileNotFoundException {
+       
+            String nombreCarpeta = Utils.Imagenes(0, 4);
+            String carpeta = "src/" + nombreCarpeta + "/";
+            
+            for (int i = 0; i<5 ; i++) {
+                String index = Integer.toString(i);
+                String rutaImagen = carpeta + nombreCarpeta + index + ".png"; 
+                imagenes.add(rutaImagen);
+            }
+ 
     }
 
     private void mostrarImagen() {
-        ImageIcon currentImage = imagenes.get(indice);
-        ImagenFondo.setIcon(currentImage);
-        setImageLabel(ImagenFondo, "src/imagenes/Helicoptero" + indice +".png");        
+        
+        setImageLabel(ImagenFondo, imagenes.get(indice));       
         actualizarPuntos();
         
     }
