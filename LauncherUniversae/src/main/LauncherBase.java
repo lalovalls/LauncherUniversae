@@ -77,6 +77,14 @@ public class LauncherBase extends javax.swing.JFrame {
         Escudo11 = new javax.swing.JLabel();
         Escudo12 = new javax.swing.JLabel();
         content = new javax.swing.JPanel();
+        PaginaWeb = new javax.swing.JLabel();
+        Youtube = new javax.swing.JLabel();
+        Twitch = new javax.swing.JLabel();
+        X = new javax.swing.JLabel();
+        Instagram = new javax.swing.JLabel();
+        Tiktok = new javax.swing.JLabel();
+        Facebook = new javax.swing.JLabel();
+        LinkedIN = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -398,6 +406,70 @@ public class LauncherBase extends javax.swing.JFrame {
 
         bg.add(content, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 200, 1540, 870));
 
+        PaginaWeb.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        PaginaWeb.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                PaginaWebMouseClicked(evt);
+            }
+        });
+        bg.add(PaginaWeb, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 180, 40));
+
+        Youtube.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Youtube.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                YoutubeMouseClicked(evt);
+            }
+        });
+        bg.add(Youtube, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 150, 40));
+
+        Twitch.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Twitch.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TwitchMouseClicked(evt);
+            }
+        });
+        bg.add(Twitch, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 300, 170, 50));
+
+        X.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        X.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                XMouseClicked(evt);
+            }
+        });
+        bg.add(X, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 140, 40));
+
+        Instagram.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Instagram.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                InstagramMouseClicked(evt);
+            }
+        });
+        bg.add(Instagram, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 140, 40));
+
+        Tiktok.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Tiktok.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                TiktokMouseClicked(evt);
+            }
+        });
+        bg.add(Tiktok, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 130, 40));
+
+        Facebook.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Facebook.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FacebookMouseClicked(evt);
+            }
+        });
+        bg.add(Facebook, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 530, 130, 50));
+
+        LinkedIN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LinkedIN.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                LinkedINMouseClicked(evt);
+            }
+        });
+        bg.add(LinkedIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 590, 130, 50));
+
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoBase.png"))); // NOI18N
         bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
 
@@ -653,6 +725,38 @@ public class LauncherBase extends javax.swing.JFrame {
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo12MouseClicked
 
+    private void PaginaWebMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaginaWebMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PaginaWebMouseClicked
+
+    private void YoutubeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_YoutubeMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_YoutubeMouseClicked
+
+    private void TwitchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TwitchMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TwitchMouseClicked
+
+    private void XMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_XMouseClicked
+
+    private void InstagramMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InstagramMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_InstagramMouseClicked
+
+    private void TiktokMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TiktokMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TiktokMouseClicked
+
+    private void FacebookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacebookMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FacebookMouseClicked
+
+    private void LinkedINMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LinkedINMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LinkedINMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -680,7 +784,15 @@ public class LauncherBase extends javax.swing.JFrame {
     private javax.swing.JLabel Escudo7;
     private javax.swing.JLabel Escudo8;
     private javax.swing.JLabel Escudo9;
+    private javax.swing.JLabel Facebook;
     private javax.swing.JLabel Fondo;
+    private javax.swing.JLabel Instagram;
+    private javax.swing.JLabel LinkedIN;
+    private javax.swing.JLabel PaginaWeb;
+    private javax.swing.JLabel Tiktok;
+    private javax.swing.JLabel Twitch;
+    private javax.swing.JLabel X;
+    private javax.swing.JLabel Youtube;
     private javax.swing.JPanel bg;
     private javax.swing.JPanel content;
     // End of variables declaration//GEN-END:variables
