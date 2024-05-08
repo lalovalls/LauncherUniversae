@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import static main.HomeController.playSound;
 
 /**
  *
@@ -223,6 +224,7 @@ public class AscensorView extends javax.swing.JPanel {
 
     private void FlechaIzquierdaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaIzquierdaMouseClicked
         showPreviousImage();
+        playSound("src/Audios/stop.wav");
     }//GEN-LAST:event_FlechaIzquierdaMouseClicked
 
     private void FlechaIzquierdaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaIzquierdaMouseEntered
@@ -237,6 +239,7 @@ public class AscensorView extends javax.swing.JPanel {
 
     private void FlechaDerechaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaDerechaMouseClicked
         showNextImage();
+        playSound("src/Audios/stop.wav");
     }//GEN-LAST:event_FlechaDerechaMouseClicked
 
     private void FlechaDerechaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaDerechaMouseEntered

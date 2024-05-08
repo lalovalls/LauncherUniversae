@@ -192,6 +192,7 @@ public class HomeController extends javax.swing.JPanel {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        playSound("src/Audios/bloop.wav");
     }//GEN-LAST:event_Button5MouseClicked
 
     private void Button4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseExited
@@ -218,6 +219,7 @@ public class HomeController extends javax.swing.JPanel {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        playSound("src/Audios/bloop.wav");
     }//GEN-LAST:event_Button4MouseClicked
 
     private void Button3MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseExited
@@ -244,6 +246,7 @@ public class HomeController extends javax.swing.JPanel {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
         }
+        playSound("src/Audios/bloop.wav");
     }//GEN-LAST:event_Button3MouseClicked
 
     private void Button2MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseExited
@@ -270,6 +273,7 @@ public class HomeController extends javax.swing.JPanel {
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
         }
+       playSound("src/Audios/bloop.wav");
     }//GEN-LAST:event_Button2MouseClicked
 
     private void Button1MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseExited
@@ -295,7 +299,8 @@ public class HomeController extends javax.swing.JPanel {
             parent.PaintHomeController(hemorragiaView);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }  
+        }
+        playSound("src/Audios/bloop.wav");
     }//GEN-LAST:event_Button1MouseClicked
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
@@ -322,8 +327,8 @@ public class HomeController extends javax.swing.JPanel {
             parent.PaintHomeController(gameController);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }  
-        playSound("src/Audios/bloop.mp3");
+        } 
+        playSound("src/Audios/bloop.wav");
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);
