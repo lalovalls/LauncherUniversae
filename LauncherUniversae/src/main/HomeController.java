@@ -4,13 +4,22 @@
  */
 package main;
 
+
 import java.awt.Image;
+import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
+import javax.swing.JLayer;
 import javax.swing.SwingUtilities;
 
 /**
@@ -27,7 +36,18 @@ public class HomeController extends javax.swing.JPanel {
         initComponents();
 
     }
-    
+    public static void playSound(String filePath) {
+        try {
+            File audioFile = new File(filePath);
+            AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioStream);
+            clip.start();
+        } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -275,10 +295,7 @@ public class HomeController extends javax.swing.JPanel {
             parent.PaintHomeController(hemorragiaView);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        
-
+        }  
     }//GEN-LAST:event_Button1MouseClicked
 
     private void Button0MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseExited
@@ -305,7 +322,8 @@ public class HomeController extends javax.swing.JPanel {
             parent.PaintHomeController(gameController);
         } catch (FileNotFoundException ex) {
             Logger.getLogger(HomeController.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        }  
+        playSound("src/Audios/bloop.mp3");
     }//GEN-LAST:event_Button0MouseClicked
   private void setImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);
