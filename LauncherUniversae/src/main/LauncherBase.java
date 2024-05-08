@@ -18,6 +18,7 @@ import javax.swing.JPanel;
 
 public class LauncherBase extends javax.swing.JFrame {
     
+    
     public HomeController CreateHomeController(int index){
         
         HomeController home = new HomeController();
@@ -45,6 +46,7 @@ public class LauncherBase extends javax.swing.JFrame {
         
     public LauncherBase() {
         initComponents();
+     
         this.setLocationRelativeTo(this);
         
         HomeController home = CreateHomeController(0);
@@ -726,35 +728,83 @@ public class LauncherBase extends javax.swing.JFrame {
     }//GEN-LAST:event_Escudo12MouseClicked
 
     private void PaginaWebMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_PaginaWebMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://universae.com";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_PaginaWebMouseClicked
 
     private void YoutubeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_YoutubeMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://www.youtube.com/UNIVERSAE_FP";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_YoutubeMouseClicked
 
     private void TwitchMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TwitchMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://www.twitch.tv/universae_fp";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_TwitchMouseClicked
 
     private void XMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://twitter.com/_Universae";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_XMouseClicked
 
     private void InstagramMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_InstagramMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://www.instagram.com/_universae/";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_InstagramMouseClicked
 
     private void TiktokMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TiktokMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://www.tiktok.com/@_universae";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_TiktokMouseClicked
 
     private void FacebookMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FacebookMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://www.facebook.com/UNIVERSAE";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_FacebookMouseClicked
 
     private void LinkedINMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_LinkedINMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://es.linkedin.com/school/universae/";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_LinkedINMouseClicked
 
     /**

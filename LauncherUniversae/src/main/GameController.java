@@ -23,6 +23,7 @@ public class GameController extends javax.swing.JPanel {
     public int indice;
     public String juegoTitulo = "juegoTitulo";
     public String juegoDescripcion = "juegoDescripcion";
+    
              
     public GameController() throws FileNotFoundException {
         
@@ -142,6 +143,11 @@ public class GameController extends javax.swing.JPanel {
 
         Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
         Comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Comenzar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ComenzarMouseClicked(evt);
+            }
+        });
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -247,6 +253,10 @@ public class GameController extends javax.swing.JPanel {
         FlechaDerecha.setSize(22, 35);
         setImageLabel(FlechaDerecha, "src/imagenes/Flecha derecha.png");        
     }//GEN-LAST:event_FlechaDerechaMouseExited
+
+    private void ComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComenzarMouseClicked
+        
+    }//GEN-LAST:event_ComenzarMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
