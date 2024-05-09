@@ -5,6 +5,8 @@
 package main;
 
 import java.awt.AlphaComposite;
+import java.awt.BorderLayout;
+import java.awt.Cursor;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -28,12 +30,15 @@ public class GameController extends javax.swing.JPanel {
     public String juegoTitulo = "juegoTitulo";
     public String juegoDescripcion = "juegoDescripcion";
     public LauncherBase launcherBase;
+    public HomeController homeController;
     
     
              
     public GameController() throws FileNotFoundException {
         
             initComponents();
+            launcherBase = new LauncherBase();
+            homeController = new HomeController();
             imagenes = new ArrayList<String>();
             cargaImagenes();
             TituloDeTexto = TituloDeTexto;
@@ -281,8 +286,10 @@ public class GameController extends javax.swing.JPanel {
 
     private void VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VolverMouseClicked
    
-       HomeController home =  launcherBase.CreateHomeController(0);
-       launcherBase.PaintHomeController(home); 
+       HomeController home = new HomeController();
+        home.setSize(1540, 870);
+        home.setLocation(0,0);
+        launcherBase.PaintHomeController(home);
     }//GEN-LAST:event_VolverMouseClicked
 
     private void ComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComenzarMouseClicked
