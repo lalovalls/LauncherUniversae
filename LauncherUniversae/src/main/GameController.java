@@ -27,6 +27,7 @@ public class GameController extends javax.swing.JPanel {
     public int indice;
     public String juegoTitulo = "juegoTitulo";
     public String juegoDescripcion = "juegoDescripcion";
+    public LauncherBase launcherBase;
     
     
              
@@ -279,9 +280,9 @@ public class GameController extends javax.swing.JPanel {
     }//GEN-LAST:event_FlechaDerechaMouseExited
 
     private void VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VolverMouseClicked
-            HomeController home = new HomeController();
-            home.setSize(1540, 870);
-            home.setLocation(0, 0);
+   
+       HomeController home =  launcherBase.CreateHomeController(0);
+       launcherBase.PaintHomeController(home); 
     }//GEN-LAST:event_VolverMouseClicked
 
     private void ComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComenzarMouseClicked
