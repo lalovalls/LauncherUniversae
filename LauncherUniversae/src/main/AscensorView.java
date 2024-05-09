@@ -61,6 +61,12 @@ public class AscensorView extends javax.swing.JPanel {
         setImageLabel(ImagenFondo, imagenes.get(indice));        
         actualizarPuntos();
         
+        int prevIndex = (indice - 1 + imagenes.size()) % imagenes.size();
+        setImageLabel(PlaceHolder, imagenes.get(prevIndex));
+
+        int nextIndex = (indice + 1) % imagenes.size();
+        setImageLabel(PlaceHolder1, imagenes.get(nextIndex));
+        
     }
 
     private void showPreviousImage() {
@@ -182,12 +188,12 @@ public class AscensorView extends javax.swing.JPanel {
         bg.add(FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 240, -1, -1));
 
         PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 990, 420));
+        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ascensor/Ascensor1.png"))); // NOI18N
+        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 50, 480, 400));
 
         PlaceHolder1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 1000, 420));
+        PlaceHolder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Ascensor/Ascensor4.png"))); // NOI18N
+        bg.add(PlaceHolder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 50, 490, 400));
 
         Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
         bg.add(Punto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 504, -1, 17));

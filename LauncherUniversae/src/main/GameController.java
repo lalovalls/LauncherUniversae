@@ -4,7 +4,10 @@
  */
 package main;
 
+import java.awt.AlphaComposite;
+import java.awt.Graphics2D;
 import java.awt.Image;
+import java.awt.image.BufferedImage;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.logging.Level;
@@ -25,12 +28,13 @@ public class GameController extends javax.swing.JPanel {
     public String juegoTitulo = "juegoTitulo";
     public String juegoDescripcion = "juegoDescripcion";
     
+    
              
     public GameController() throws FileNotFoundException {
         
             initComponents();
             imagenes = new ArrayList<String>();
-            cargaImagenes(); 
+            cargaImagenes();
             TituloDeTexto = TituloDeTexto;
             Texto = Texto;
     }
@@ -66,6 +70,12 @@ public class GameController extends javax.swing.JPanel {
   
         setImageLabel(ImagenFondo, imagenes.get(indice));
         actualizarPuntos();
+        
+        int prevIndex = (indice - 1 + imagenes.size()) % imagenes.size();
+        setImageLabel(PlaceHolder, imagenes.get(prevIndex));
+
+        int nextIndex = (indice + 1) % imagenes.size();
+        setImageLabel(PlaceHolder1, imagenes.get(nextIndex));
     }
 
     private void showPreviousImage() {
@@ -79,12 +89,13 @@ public class GameController extends javax.swing.JPanel {
         mostrarImagen();
 
     }
-      private void setImageLabel(JLabel labelName, String root){
+    private void setImageLabel(JLabel labelName, String root){
         ImageIcon image = new ImageIcon(root);
         Icon icon = new ImageIcon ( image.getImage().getScaledInstance(labelName.getWidth(), labelName.getHeight(), Image.SCALE_SMOOTH));
         labelName.setIcon(icon);
         labelName.repaint();
-    }
+    }     
+      
       private void actualizarPuntos() {
           
     Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselEmpty.png")));
@@ -187,12 +198,12 @@ public class GameController extends javax.swing.JPanel {
         bg.add(FlechaDerecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 240, -1, -1));
 
         PlaceHolder.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 40, 990, 420));
+        PlaceHolder.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Embarque/Embarque1.png"))); // NOI18N
+        bg.add(PlaceHolder, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 40, 400, 420));
 
         PlaceHolder1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        PlaceHolder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cuadrado fondo enfocado.png"))); // NOI18N
-        bg.add(PlaceHolder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 40, 1000, 420));
+        PlaceHolder1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Embarque/Embarque4.png"))); // NOI18N
+        bg.add(PlaceHolder1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 40, 430, 420));
 
         Punto1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/PuntoCarruselFilled.png"))); // NOI18N
         bg.add(Punto1, new org.netbeans.lib.awtextra.AbsoluteConstraints(708, 504, -1, 17));
@@ -279,11 +290,5 @@ public class GameController extends javax.swing.JPanel {
     private javax.swing.JPanel bg;
     // End of variables declaration//GEN-END:variables
 
-    void juegoTitulo(String TituloJuegos) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 
-    private void setImageLabel(JLabel ImagenFondo, ImageIcon currentImage) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
