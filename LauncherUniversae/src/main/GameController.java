@@ -130,7 +130,6 @@ public class GameController extends javax.swing.JPanel {
     private void initComponents() {
 
         bg = new javax.swing.JPanel();
-        Comenzar = new javax.swing.JLabel();
         ImagenFondo = new javax.swing.JLabel();
         FlechaIzquierda = new javax.swing.JLabel();
         FlechaDerecha = new javax.swing.JLabel();
@@ -143,6 +142,8 @@ public class GameController extends javax.swing.JPanel {
         Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
+        Comenzar = new javax.swing.JLabel();
+        Volver = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -152,15 +153,6 @@ public class GameController extends javax.swing.JPanel {
         bg.setMinimumSize(new java.awt.Dimension(1427, 824));
         bg.setPreferredSize(new java.awt.Dimension(1540, 870));
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
-        Comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        Comenzar.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                ComenzarMouseClicked(evt);
-            }
-        });
-        bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
         ImagenFondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         ImagenFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Embarque/Embarque0.png"))); // NOI18N
@@ -235,7 +227,25 @@ public class GameController extends javax.swing.JPanel {
         Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         bg.add(Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 740, 150));
 
-        add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 874));
+        Comenzar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Comenzar.png"))); // NOI18N
+        Comenzar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Comenzar.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ComenzarMouseClicked(evt);
+            }
+        });
+        bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
+
+        Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/VOLVER (1).png"))); // NOI18N
+        Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Volver.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                VolverMouseClicked(evt);
+            }
+        });
+        bg.add(Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 790, -1, -1));
+
+        add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -6, 1550, 880));
     }// </editor-fold>//GEN-END:initComponents
 
     private void FlechaIzquierdaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FlechaIzquierdaMouseClicked
@@ -268,8 +278,14 @@ public class GameController extends javax.swing.JPanel {
         setImageLabel(FlechaDerecha, "src/imagenes/Flecha derecha.png");        
     }//GEN-LAST:event_FlechaDerechaMouseExited
 
+    private void VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VolverMouseClicked
+            HomeController home = new HomeController();
+            home.setSize(1540, 870);
+            home.setLocation(0, 0);
+    }//GEN-LAST:event_VolverMouseClicked
+
     private void ComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComenzarMouseClicked
-        
+        // TODO add your handling code here:
     }//GEN-LAST:event_ComenzarMouseClicked
 
 
@@ -287,6 +303,7 @@ public class GameController extends javax.swing.JPanel {
     private javax.swing.JLabel Punto5;
     private javax.swing.JLabel Texto;
     private javax.swing.JLabel TituloDeTexto;
+    private javax.swing.JLabel Volver;
     private javax.swing.JPanel bg;
     // End of variables declaration//GEN-END:variables
 
