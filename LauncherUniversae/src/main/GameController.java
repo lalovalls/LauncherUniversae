@@ -286,7 +286,13 @@ public class GameController extends javax.swing.JPanel {
     }//GEN-LAST:event_VolverMouseClicked
 
     private void ComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComenzarMouseClicked
-        // TODO add your handling code here:
+        String enlace = "https://universaedevelop.itch.io/campopracticas-epis";
+        try {
+            java.awt.Desktop.getDesktop().browse(java.net.URI.create(enlace));
+        } 
+        catch (java.io.IOException ex) {
+            System.out.println(ex.getMessage());
+    }
     }//GEN-LAST:event_ComenzarMouseClicked
 
 
