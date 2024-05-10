@@ -484,7 +484,7 @@ public class LauncherBase extends javax.swing.JFrame {
         });
 
         BtnExitTxt.setBackground(new java.awt.Color(69, 184, 172));
-        BtnExitTxt.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        BtnExitTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         BtnExitTxt.setForeground(new java.awt.Color(69, 184, 172));
         BtnExitTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         BtnExitTxt.setText("x");
@@ -505,7 +505,6 @@ public class LauncherBase extends javax.swing.JFrame {
         BtnExit.setLayout(BtnExitLayout);
         BtnExitLayout.setHorizontalGroup(
             BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-<<<<<<< Updated upstream
             .addGap(0, 60, Short.MAX_VALUE)
             .addGroup(BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(BtnExitLayout.createSequentialGroup()
@@ -524,23 +523,9 @@ public class LauncherBase extends javax.swing.JFrame {
         );
 
         bg.add(BtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1850, 10, 60, 50));
-=======
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BtnExitLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(BtnExitTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        BtnExitLayout.setVerticalGroup(
-            BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, BtnExitLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(BtnExitTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        bg.add(BtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1840, 10, 50, 40));
->>>>>>> Stashed changes
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoBase.png"))); // NOI18N
-        bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1920, 1080));
+        bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
