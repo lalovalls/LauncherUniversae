@@ -5,6 +5,7 @@
 package main;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Image;
 import java.util.concurrent.ExecutorService;
@@ -86,9 +87,12 @@ public class LauncherBase extends javax.swing.JFrame {
         Tiktok = new javax.swing.JLabel();
         Facebook = new javax.swing.JLabel();
         LinkedIN = new javax.swing.JLabel();
+        BtnExit = new javax.swing.JPanel();
+        BtnExitTxt = new javax.swing.JLabel();
         Fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         setResizable(false);
 
         bg.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -471,6 +475,55 @@ public class LauncherBase extends javax.swing.JFrame {
         });
         bg.add(LinkedIN, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 590, 130, 50));
 
+        BtnExit.setBackground(new java.awt.Color(10, 38, 72));
+        BtnExit.setForeground(new java.awt.Color(255, 255, 255));
+        BtnExit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnExitMouseClicked(evt);
+            }
+        });
+
+        BtnExitTxt.setBackground(new java.awt.Color(69, 184, 172));
+        BtnExitTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        BtnExitTxt.setForeground(new java.awt.Color(69, 184, 172));
+        BtnExitTxt.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        BtnExitTxt.setText("x");
+        BtnExitTxt.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        BtnExitTxt.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                BtnExitTxtMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                BtnExitTxtMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                BtnExitTxtMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout BtnExitLayout = new javax.swing.GroupLayout(BtnExit);
+        BtnExit.setLayout(BtnExitLayout);
+        BtnExitLayout.setHorizontalGroup(
+            BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
+            .addGroup(BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BtnExitLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BtnExitTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+        BtnExitLayout.setVerticalGroup(
+            BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
+            .addGroup(BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(BtnExitLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(BtnExitTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+        );
+
+        bg.add(BtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 50, 40));
+
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoBase.png"))); // NOI18N
         bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
 
@@ -806,6 +859,24 @@ public class LauncherBase extends javax.swing.JFrame {
     }
     }//GEN-LAST:event_LinkedINMouseClicked
 
+    private void BtnExitTxtMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnExitTxtMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_BtnExitTxtMouseClicked
+
+    private void BtnExitTxtMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnExitTxtMouseEntered
+        BtnExit.setBackground(new Color(69, 184, 172));
+        BtnExitTxt.setForeground(new Color(10, 38, 72));
+    }//GEN-LAST:event_BtnExitTxtMouseEntered
+
+    private void BtnExitTxtMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnExitTxtMouseExited
+        BtnExit.setBackground(new Color(10, 38, 72));
+        BtnExitTxt.setForeground(new Color(69, 184, 172));
+    }//GEN-LAST:event_BtnExitTxtMouseExited
+
+    private void BtnExitMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BtnExitMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_BtnExitMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -819,6 +890,8 @@ public class LauncherBase extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel BtnExit;
+    private javax.swing.JLabel BtnExitTxt;
     private javax.swing.JLabel Escudo0;
     private javax.swing.JLabel Escudo1;
     private javax.swing.JLabel Escudo10;
