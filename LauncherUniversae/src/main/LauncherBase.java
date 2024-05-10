@@ -19,15 +19,16 @@ import javax.swing.JPanel;
 public class LauncherBase extends javax.swing.JFrame {
     
     
-    public HomeController CreateHomeController(int index){
-        
+    
+    public HomeController CreateHomeController(int index, LauncherBase launcherBase){
         HomeController home = new HomeController();
         home.setSize(1540, 870);
         home.setLocation(0,0);
-        home.parent = this;
+        home.parent = launcherBase;
         home.indiceGradoActual = index;
         return home;
-    }
+}
+
     public void PaintHomeController(JComponent component) {
         setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
         content.removeAll();
@@ -48,9 +49,7 @@ public class LauncherBase extends javax.swing.JFrame {
         initComponents();
      
         this.setLocationRelativeTo(this);
-        
-        HomeController home = CreateHomeController(0);
-        System.out.println("HomeController created");
+        HomeController home = CreateHomeController(0, this);
         PaintHomeController(home);
 
         
@@ -622,14 +621,14 @@ public class LauncherBase extends javax.swing.JFrame {
     private void Escudo8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo8MouseClicked
        Escudo8.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(8);
+       HomeController home = CreateHomeController(8, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo8MouseClicked
 
     private void Escudo0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo0MouseClicked
        Escudo0.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(0);
+       HomeController home = CreateHomeController(0, this);
        PaintHomeController(home);           
     }//GEN-LAST:event_Escudo0MouseClicked
 
@@ -646,84 +645,84 @@ public class LauncherBase extends javax.swing.JFrame {
     private void Escudo1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo1MouseClicked
        Escudo1.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(1);
+       HomeController home = CreateHomeController(1, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo1MouseClicked
 
     private void Escudo2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo2MouseClicked
        Escudo2.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(2);
+       HomeController home = CreateHomeController(2, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo2MouseClicked
 
     private void Escudo3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo3MouseClicked
        Escudo3.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(3);
+       HomeController home = CreateHomeController(3, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo3MouseClicked
 
     private void Escudo4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo4MouseClicked
        Escudo4.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(4);
+       HomeController home = CreateHomeController(4, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo4MouseClicked
 
     private void Escudo5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo5MouseClicked
        Escudo5.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(5);
+       HomeController home = CreateHomeController(5, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo5MouseClicked
 
     private void Escudo6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo6MouseClicked
        Escudo6.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(6);
+       HomeController home = CreateHomeController(6, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo6MouseClicked
 
     private void Escudo7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo7MouseClicked
        Escudo7.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(7);
+       HomeController home = CreateHomeController(7, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo7MouseClicked
 
     private void Escudo13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo13MouseClicked
        Escudo13.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(13);
+       HomeController home = CreateHomeController(13, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo13MouseClicked
 
     private void Escudo9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo9MouseClicked
        Escudo9.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(9);
+       HomeController home = CreateHomeController(9, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo9MouseClicked
 
     private void Escudo10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo10MouseClicked
        Escudo10.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(10);
+       HomeController home = CreateHomeController(10, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo10MouseClicked
 
     private void Escudo11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo11MouseClicked
        Escudo11.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(11);
+       HomeController home = CreateHomeController(11, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo11MouseClicked
 
     private void Escudo12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Escudo12MouseClicked
        Escudo12.setSize(113, 121);
        SetImageLabel(Escudo8, "src/imagenes/LauncherButton8.png");
-       HomeController home = CreateHomeController(12);
+       HomeController home = CreateHomeController(12, this);
        PaintHomeController(home);
     }//GEN-LAST:event_Escudo12MouseClicked
 

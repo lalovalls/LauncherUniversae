@@ -22,14 +22,16 @@ public class HemorragiaView extends javax.swing.JPanel {
     public int indice;
     public String juegoTitulo = "juegoTitulo";
     public String juegoDescripcion = "juegoDescripcion";
+    public HomeController homeController;
     
     
-    public HemorragiaView() throws FileNotFoundException {
+    public HemorragiaView(HomeController homeController) throws FileNotFoundException {
         
         initComponents();
         imagenes = new ArrayList<String>();
         cargaImagenes(); 
         TituloDeTexto.setText(juegoTitulo);
+        this.homeController = homeController;
         Texto = Texto;
 
                      
@@ -135,6 +137,7 @@ public class HemorragiaView extends javax.swing.JPanel {
         Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -227,6 +230,16 @@ public class HemorragiaView extends javax.swing.JPanel {
         Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         bg.add(Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 740, 150));
 
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Volver.png"))); // NOI18N
+        jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel2MouseClicked(evt);
+            }
+        });
+        bg.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 50));
+
         add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 874));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -264,6 +277,12 @@ public class HemorragiaView extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_ComenzarMouseClicked
 
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+        homeController.setSize(1540, 870);
+        homeController.setLocation(0,0);
+        homeController.parent.PaintHomeController(homeController);
+    }//GEN-LAST:event_jLabel2MouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Comenzar;
@@ -280,5 +299,6 @@ public class HemorragiaView extends javax.swing.JPanel {
     private javax.swing.JLabel Texto;
     private javax.swing.JLabel TituloDeTexto;
     private javax.swing.JPanel bg;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }

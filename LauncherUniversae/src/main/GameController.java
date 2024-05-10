@@ -29,16 +29,15 @@ public class GameController extends javax.swing.JPanel {
     public int indice;
     public String juegoTitulo = "juegoTitulo";
     public String juegoDescripcion = "juegoDescripcion";
-    public LauncherBase launcherBase;
     public HomeController homeController;
+ 
     
     
              
-    public GameController() throws FileNotFoundException {
+    public GameController(HomeController homeController) throws FileNotFoundException {
         
             initComponents();
-            launcherBase = new LauncherBase();
-            homeController = new HomeController();
+            this.homeController = homeController;
             imagenes = new ArrayList<String>();
             cargaImagenes();
             TituloDeTexto = TituloDeTexto;
@@ -242,14 +241,15 @@ public class GameController extends javax.swing.JPanel {
         });
         bg.add(Comenzar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1234, 770, -1, -1));
 
-        Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/VOLVER (1).png"))); // NOI18N
+        Volver.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Volver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Volver.png"))); // NOI18N
         Volver.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Volver.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 VolverMouseClicked(evt);
             }
         });
-        bg.add(Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 790, -1, -1));
+        bg.add(Volver, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 10, 70, 50));
 
         add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -6, 1550, 880));
     }// </editor-fold>//GEN-END:initComponents
@@ -285,11 +285,9 @@ public class GameController extends javax.swing.JPanel {
     }//GEN-LAST:event_FlechaDerechaMouseExited
 
     private void VolverMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VolverMouseClicked
-   
-       HomeController home = new HomeController();
-        home.setSize(1540, 870);
-        home.setLocation(0,0);
-        launcherBase.PaintHomeController(home);
+        homeController.setSize(1540, 870);
+        homeController.setLocation(0,0);
+        homeController.parent.PaintHomeController(homeController);
     }//GEN-LAST:event_VolverMouseClicked
 
     private void ComenzarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ComenzarMouseClicked

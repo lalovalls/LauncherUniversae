@@ -247,8 +247,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="Volver">
           <Properties>
+            <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/imagenes/VOLVER (1).png"/>
+              <Image iconType="3" name="/imagenes/Volver.png"/>
             </Property>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Hand Cursor"/>
@@ -259,7 +260,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="30" y="790" width="-1" height="-1"/>
+              <AbsoluteConstraints x="0" y="10" width="70" height="50"/>
             </Constraint>
           </Constraints>
         </Component>

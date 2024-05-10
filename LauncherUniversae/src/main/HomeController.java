@@ -289,7 +289,7 @@ public class HomeController extends javax.swing.JPanel {
     private void Button1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button1MouseClicked
 
         try {
-            HemorragiaView hemorragiaView = new HemorragiaView();
+            HemorragiaView hemorragiaView = new HemorragiaView(this);
             hemorragiaView.setSize(1540, 870);
             hemorragiaView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 1);
@@ -317,7 +317,7 @@ public class HomeController extends javax.swing.JPanel {
 
     private void Button0MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button0MouseClicked
         try {
-            GameController gameController = new GameController();
+            GameController gameController = new GameController(this);
             gameController.setSize(1540, 870);
             gameController.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 0);
