@@ -22,14 +22,16 @@ public class AscensorView extends javax.swing.JPanel {
     public int indice;
     public String juegoTitulo = "juegoTitulo";
     public String Descripcion = "Descripcion";
+    public HomeController homeController;
     
-    public AscensorView() throws FileNotFoundException {
+    public AscensorView(HomeController homeController) throws FileNotFoundException {
         
             initComponents();
             imagenes = new ArrayList<String>();
             cargaImagenes(); 
             TituloDeTexto = TituloDeTexto;
             Descripcion = Descripcion;
+            this.homeController = homeController;
     }
     
     public void setJuegoTitulo(String nuevoTitulo) {
@@ -133,6 +135,7 @@ public class AscensorView extends javax.swing.JPanel {
         Punto3 = new javax.swing.JLabel();
         TituloDeTexto = new javax.swing.JLabel();
         Texto = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
 
         setMinimumSize(new java.awt.Dimension(1540, 870));
         setPreferredSize(new java.awt.Dimension(1540, 870));
@@ -225,6 +228,16 @@ public class AscensorView extends javax.swing.JPanel {
         Texto.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         bg.add(Texto, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 600, 740, 150));
 
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Volver.png"))); // NOI18N
+        jLabel1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        bg.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 70, 50));
+
         add(bg, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 874));
     }// </editor-fold>//GEN-END:initComponents
 
@@ -262,6 +275,12 @@ public class AscensorView extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_ComenzarMouseClicked
 
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        homeController.setSize(1540, 870);
+        homeController.setLocation(0,0);
+        homeController.parent.PaintHomeController(homeController);
+    }//GEN-LAST:event_jLabel1MouseClicked
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Comenzar;
@@ -278,5 +297,6 @@ public class AscensorView extends javax.swing.JPanel {
     private javax.swing.JLabel Texto;
     private javax.swing.JLabel TituloDeTexto;
     private javax.swing.JPanel bg;
+    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }

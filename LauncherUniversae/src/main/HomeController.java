@@ -181,7 +181,7 @@ public class HomeController extends javax.swing.JPanel {
     private void Button5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button5MouseClicked
         try {
             
-            AscensorView ascensorView = new AscensorView();
+            AscensorView ascensorView = new AscensorView(this);
             ascensorView.setSize(1540, 870);
             ascensorView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 5);
@@ -208,7 +208,7 @@ public class HomeController extends javax.swing.JPanel {
     private void Button4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button4MouseClicked
         try {
             
-            HelicopteroView helicopteroView = new HelicopteroView();
+            HelicopteroView helicopteroView = new HelicopteroView(this);
             helicopteroView.setSize(1540, 870);
             helicopteroView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 4);
@@ -235,7 +235,7 @@ public class HomeController extends javax.swing.JPanel {
     private void Button3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button3MouseClicked
         try {
             
-            EpisView episView = new EpisView();
+            EpisView episView = new EpisView(this);
             episView.setSize(1540, 870);
             episView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 3);
@@ -262,7 +262,7 @@ public class HomeController extends javax.swing.JPanel {
     private void Button2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Button2MouseClicked
        try {
             
-            ExtincionView extincionView = new ExtincionView();
+            ExtincionView extincionView = new ExtincionView(this);
             extincionView.setSize(1540, 870);
             extincionView.setLocation(0, 0);
             String tituloDelJuego = Utils.TituloJuegos(0, 2);
