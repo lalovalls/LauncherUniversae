@@ -505,7 +505,7 @@ public class LauncherBase extends javax.swing.JFrame {
         BtnExit.setLayout(BtnExitLayout);
         BtnExitLayout.setHorizontalGroup(
             BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 50, Short.MAX_VALUE)
+            .addGap(0, 60, Short.MAX_VALUE)
             .addGroup(BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(BtnExitLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -514,7 +514,7 @@ public class LauncherBase extends javax.swing.JFrame {
         );
         BtnExitLayout.setVerticalGroup(
             BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 40, Short.MAX_VALUE)
+            .addGap(0, 50, Short.MAX_VALUE)
             .addGroup(BtnExitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(BtnExitLayout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
@@ -522,7 +522,7 @@ public class LauncherBase extends javax.swing.JFrame {
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
-        bg.add(BtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 50, 40));
+        bg.add(BtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(1850, 10, 60, 50));
 
         Fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/FondoBase.png"))); // NOI18N
         bg.add(Fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, -4, 1920, 1080));
