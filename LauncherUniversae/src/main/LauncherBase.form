@@ -713,13 +713,18 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+<<<<<<< Updated upstream
               <AbsoluteConstraints x="1850" y="10" width="60" height="50"/>
+=======
+              <AbsoluteConstraints x="1840" y="10" width="50" height="40"/>
+>>>>>>> Stashed changes
             </Constraint>
           </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                   <EmptySpace min="0" pref="60" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -727,11 +732,17 @@
                           <Component id="BtnExitTxt" min="-2" pref="50" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
+=======
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="BtnExitTxt" min="-2" pref="50" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
+<<<<<<< Updated upstream
                   <EmptySpace min="0" pref="50" max="32767" attributes="0"/>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
@@ -739,6 +750,11 @@
                           <Component id="BtnExitTxt" min="-2" pref="40" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
+=======
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="BtnExitTxt" min="-2" pref="40" max="-2" attributes="0"/>
+>>>>>>> Stashed changes
                   </Group>
               </Group>
             </DimensionLayout>
@@ -750,7 +766,7 @@
                   <Color blue="ac" green="b8" red="45" type="rgb"/>
                 </Property>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Segoe UI" size="18" style="0"/>
+                  <Font name="Segoe UI" size="24" style="0"/>
                 </Property>
                 <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ac" green="b8" red="45" type="rgb"/>
@@ -777,7 +793,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="-2" y="-4" width="1920" height="1080"/>
+              <AbsoluteConstraints x="0" y="0" width="1920" height="1080"/>
             </Constraint>
           </Constraints>
         </Component>
